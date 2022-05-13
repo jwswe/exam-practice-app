@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Exam } from './views/exam';
 import './App.css';
+
+import { Routes, Route } from 'react-router-dom';
+import { Importer } from './views/importer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <header className="header"></header>
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossOrigin="anonymous"
+      />
+
+      <main className="main">
+        <Routes>
+          {/* <Route path="/account" component={AccountView} /> */}
+          <Route path="/" element={<Exam />} />
+          <Route path="/import" element={<Importer />} />
+        </Routes>
+      </main>
     </div>
   );
 }
