@@ -194,7 +194,7 @@ export const Exam = () => {
         </IconButton>
       </ButtonContainer>
       <StyledPaper>
-        <Heading>{`Question: ${current + 1}/${totalQuestion} ${answered[current] ? '(Answered)' : ''}`}</Heading>
+        <Heading>{`Question: ${current + 1}/${totalQuestion}`}</Heading>
         <QuestionText>{currentQuestion.question}</QuestionText>
         <AllAnswers />
       </StyledPaper>
