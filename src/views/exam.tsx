@@ -3,6 +3,7 @@ import { ArrowCircleLeft, ArrowCircleRight } from '@mui/icons-material';
 import { Container } from '@mui/system';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 
 import { QuestionPrefix } from '../constant';
 import question from '../data/questions_1.json';
@@ -167,7 +168,9 @@ export const Exam = () => {
 
         return (
           <Answer
-            key={`answer-${i}`}
+            key={a.text}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
             style={{
               color: displayColor,
               fontWeight,
@@ -195,7 +198,9 @@ export const Exam = () => {
       </ButtonContainer>
       <StyledPaper>
         <Heading>{`Question: ${current + 1}/${totalQuestion}`}</Heading>
-        <QuestionText>{currentQuestion.question}</QuestionText>
+        <QuestionText key={currentQuestion.question} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }}>
+          {currentQuestion.question}
+        </QuestionText>
         <AllAnswers />
       </StyledPaper>
       <Label
@@ -224,7 +229,7 @@ const StyledSwitch = styled(Switch)({
   },
 });
 
-const Text = styled('div')({
+const Text = styled(motion.div)({
   textAlign: 'left',
   fontSize: 20,
   color: selectedColor,
