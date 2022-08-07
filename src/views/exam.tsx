@@ -21,7 +21,7 @@ const loadQuestion = (number: number) => {
 
 export const Exam = () => {
   const [searchParams] = useSearchParams();
-  const [current, setCurrent] = useState<number>(Number(searchParams.get('q')) - 1);
+  const [current, setCurrent] = useState<number>(Number(searchParams.get('q') || 1) - 1);
   const [selected, setSelected] = useState<number>(-1);
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [color, setColor] = useState(selectedColor);
