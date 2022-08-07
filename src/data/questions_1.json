@@ -1,0 +1,1946 @@
+[
+  {
+    "question": "A platform as a service (PaaS) solution that hosts\nweb apps in Azure provides full control of the\noperating systems that host applications.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A platform as a service (PaaS) solution that hosts\nweb apps in Azure provides the ability to scale the\nplatform automatically.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A platform as a service (PaaS) solution that hosts\nweb apps in Azure provides professional\ndevelopment services to continuously add features\nto custom applications.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure provides flexibility between capital\nexpenditure (CapEx) and operational\nexponditure (OpEx).",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "If you create two Azure virtual machines that\nuse the B2S size, each virtual machine will\nalways generate the same monthly costs.\n",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "When an Azure virtual machine is stopped, you\ncontinue to pay storage costs associated to the\nvirtual machine.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "To implement a hybrid cloud model, a company must have an\ninternal network.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A company can extend the computing resources of its internal network\nby using a hybrid cloud.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "In a public cloud model, only guest users at your company can access\nthe resources in the cloud.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution provides full control\nof operating systems that host applications.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution provides additional\nmemory to apps by changing pricing tiers.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution can automatically\nscale the number of instances.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Pay-As-You-Go pricing is an example of CapEx.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Paying electricity for your datacenter is an example of OpEx.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Deploying your own datacenter is an example of CapEx.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A company can extend a private cloud by adding its own\nphysical servers to the public cloud.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "To build a hybrid cloud, you must deploy resources to the\npublic cloud.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A private cloud must be disconnected from the intemet.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A platform as a service (PaaS) solution that hosts\nweb apps in Azure provides full control of the\noperating systems that host applications.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution that hosts\nweb apps in Azure can be provided with additional\nmemory by changing the pricing tier.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution that hosts\nweb apps in Azure can be configured to\nautomatically scale the number of instances based\non demand.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Building a data center infrastructure is an example\nof operational expenditure (OpEx) costs.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Monthly salaries for technical personnel are an\nexample of operational expenditure (OpEx) costs.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Leasing software is an example of operational\nexpenditure (OpEx) costs.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "With software as a service (SaaS), you must apply software updates.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "With infrastructure as a service (laaS), you must install the software\nthat you want to use.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Backup is an example of platform as a service (PaaS).",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can create a resource group inside of another resource group.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure virtual machine can be in multiple resource groups.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A resource group can contain resources from multiple Azure regions.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Microsoft SQL Server 2019 installed on an Azure virtual machine is an example Of platform as a service (PaaS).",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure SQL Database is an example of platform as a service (PaaS).",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Cosmos DB is an example Of software as a service (SaaS).",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Files is an example of infrastructure as a service\n(laaS).",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A DNS server that runs on an Azure virtual machine\nis an example of platform as a service (PaaS).",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Microsoft Intune is an example of software as a service\n(SaaS).",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Cloud computing provides elastic scalability.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Customers can minimize capital expenditure\n(CapEx) by using a public cloud.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Cloud computing leverages virtualization to provide\nservices to multiple customers simultaneously.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A company can extend an intemal network by adding its own\nphysical servers to the public cloud.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A private cloud must be disconnected from the internet.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Part of a hybrid cloud is the public cloud.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure resources can only access other resources in the same resource group.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "If you delete a resource group, all the resources in the resource group will be deleted.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A resource group can contain resources from multiple Azure regions.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure subscription can be associated to multiple Azure Active\nDirectory (Azure AD) tenants.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can change the Azure Active Directory (Azure AD) tenant to which an\nAzure subscription is associated",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "When an Azure subscription expires, the associated Azure Active\nDirectory (Azure AD) tenant is deleted automatically.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A single Microsoft account can be\nused to manage multiple Azure\nsubscriptions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Two Azure subscriptions can be\nmerged into a single subscription.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A company can use resources from\nmultiple subscriptions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Each Azure subscription can contain multiple account administrators.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Each Azure subscription can be managed by using a Microsoft account only.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure resource group contains multiple Azure subscriptions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Availability zones can be implemented in all Azure regions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Only virtual machines that run Windows Server can be\ncreated in availability zones.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Availability zones are used to replicate data and applications\nto multiple regions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "All the Azure resources deployed to a\nresource group must use the same\nAzure region.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "If you assign a tag to a resource group, all the\nAzure resources in that resource group are\nassigned to the same tag.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "If you assign permissions for a user to manage\na resource group, the user can manage all the\nAzure resources in that resource group.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Data that is stored in an Azure Storage account automatically has at least three copies.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "All data that is copied to an Azure Storage account is backed up automatically to another\nAzure data center.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure Storage account can contain up to 2 TB of data and up to one million files.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "If you have Azure resources deployed to every region, you can implement availability zones\nin all the regions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Only virtual machines that run Windows Server can be created in availability zones.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Availability zones are used to replicate data and applications to multiple regions.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "North America is represented by a single Azure region.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Every Azure region has multiple datacenters.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Data transfers between Azure services located in different Azure\nregions are always free.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Windows Virtual Desktop session host can run Windows 10 only.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Windows Virtual Desktop host pool that includes 20 session\nhosts supports a maximum of 20 simultaneous user connections.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Windows Virtual Desktop supports desktop and app virtualization.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can use Availability Zones in Azure to\nprotect Azure virtual machines from a\ndatacenter failure.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can use Availability Zones in Azure to\nprotect Azure virtual machines from a region\nfailure.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can use Availability Zones in Azure to\nprotect Azure managed disks from a\ndatacenter failure.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure subscription can have multiple account administrators",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure subscription can be managed by using a Microsoft\naccount only",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure resource group can contain multiple Azure subscriptions",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "To use Azure Active Directory (Azure AD) credentials to sign in to a computer that\nruns Windows 10, the computer must be joined to Azure AD.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Users in Azure Active Directory (Azure AD) are organized by using resource groups.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) groups support dynamic membership rules.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The Archive access tier is set at the storage account level.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The Hot access tier is recommended for data that is accessed\nand modified frequently.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The Cool access tier is recommended for long term backups.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure PowerSheII modules can be installed on macOS.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Cloud Shell can be accessed from a web browser on\na Linux computer.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The Azure portal can only be accessed from a Windows\ndevice.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Monitor can monitor the performance of on-premises\ncomputers.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Monitor can send alerts to Azure Active Directory security\ngroups.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Monitor can trigger alerts based on data in an Azure Log\nAnalytics workspace.",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company’s Azure subscription includes a Basic support plan.\nThey would like to request an assessment of an Azure environment’s design from Microsoft. This is, however, not supported by\nthe existing plan.\nYou want to make sure that the company subscribes to a support plan that allows this functionality, while keeping expenses to a\nminimum.\nSolution: You recommend that the company subscribes to the Professional Direct support plan.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You are tasked with deploying Azure virtual machines for your company.\nYou need to make use of the appropriate cloud deployment solution.\nSolution: You should make use of Software as a Service (SaaS).\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You are tasked with deploying Azure virtual machines for your company.\nYou need to make use of the appropriate cloud deployment solution.\nSolution: You should make use of Platform as a Service (PaaS).\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You are tasked with deploying Azure virtual machines for your company.\nYou need to make use of the appropriate cloud deployment solution.\nSolution: You should make use of Infrastructure as a Service (IaaS).\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your developers have created 10 web applications that must be host on Azure.\nYou need to determine which Azure web tier plan to host the web apps. The web tier plan must meet the following\nrequirements:\nThe web apps will use custom domains.\nThe web apps each require 10 GB of storage.\nThe web apps must each run in dedicated compute instances.\nLoad balancing between instances must be included.\nCosts must be minimized.\nWhich web tier plan should you use? 2You are planning to migrate a company to Azure. Each of the company’s numerous divisions will have an administrator in place\nto manage the Azure resources used by their respective division.\nYou want to make sure that the Azure deployment you employ allows for Azure to be segmented for the divisions, while keeping\nadministrative effort to a minimum.\nSolution: You plan to make use of several Azure Active Directory (Azure AD) directories.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company is planning to migrate all their virtual machines to an Azure pay-as-you-go subscription. The virtual machines are\ncurrently hosted on the Hyper-V hosts in a data center.\nYou are required make sure that the intended Azure solution uses the correct expenditure model.\nSolution: You should recommend the use of the elastic expenditure model.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company is planning to migrate all their virtual machines to an Azure pay-as-you-go subscription. The virtual machines are\ncurrently hosted on the Hyper-V hosts in a data center.\nYou are required make sure that the intended Azure solution uses the correct expenditure model.\nSolution: You should recommend the use of the scalable expenditure model.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company is planning to migrate all their virtual machines to an Azure pay-as-you-go subscription. The virtual machines are\ncurrently hosted on the Hyper-V hosts in a data center.\nYou are required make sure that the intended Azure solution uses the correct expenditure model.\nSolution: You should recommend the use of the operational expenditure model.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You are required to deploy an Artificial Intelligence (AI) solution in Azure.\nYou want to make sure that you are able to build, test, and deploy predictive analytics for the solution.\nSolution: You should make use of Azure Cosmos DB.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company’s Active Directory forest includes thousands of user accounts.\nYou have been informed that all network resources will be migrated to Azure. Thereafter, the on-premises data center will be\nretired.\nYou are required to employ a strategy that reduces the effect on users, once the planned migration has been completed.\nSolution: You plan to sync all the Active Directory user accounts to Azure Active Directory (Azure AD).\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You are required to deploy an Artificial Intelligence (AI) solution in Azure.\nYou want to make sure that you are able to build, test, and deploy predictive analytics for the solution.\nSolution: You should make use of Azure Machine Learning Studio.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company’s infrastructure includes a number of business units that each need a large number of various Azure resources\nfor everyday operation.\nThe resources required by each business unit are identical.\nYou are required to sanction a strategy to create Azure resources automatically.\nSolution: You recommend that the Azure API Management service be included in the strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company’s infrastructure includes a number of business units that each need a large number of various Azure resources\nfor everyday operation.\nThe resources required by each business unit are identical.\nYou are required to sanction a strategy to create Azure resources automatically.\nSolution: You recommend that management groups be included in the strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company’s infrastructure includes a number of business units that each need a large number of various Azure resources\nfor everyday operation.\nThe resources required by each business unit are identical.\nYou are required to sanction a strategy to create Azure resources automatically.\nSolution: You recommend that the Azure Resource Manager templates be included in the strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You are tasked with deploying a critical LOB application, which will be installed on a virtual machine, to Azure.\nYou are informed that the application deployment strategy should allow for a guaranteed availability of 99.99 percent. You need\nto make sure that the strategy requires as little virtual machines and availability zones as possible.\nSolution: You include two virtual machines and one availability zone in your strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You are tasked with deploying a critical LOB application, which will be installed on a virtual machine, to Azure.\nYou are informed that the application deployment strategy should allow for a guaranteed availability of 99.99 percent. You need\nto make sure that the strategy requires as little virtual machines and availability zones as possible.\nSolution: You include one virtual machine and two availability zones in your strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You are tasked with deploying a critical LOB application, which will be installed on a virtual machine, to Azure.\nYou are informed that the application deployment strategy should allow for a guaranteed availability of 99.99 percent. You need\nto make sure that the strategy requires as little virtual machines and availability zones as possible.\nSolution: You include two virtual machines and two availability zones in your strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company’s developers intend to deploy a large number of custom virtual machines on a weekly basis. They will also be\nremoving these virtual machines during the same week it was deployed. Sixty percent of the virtual machines have Windows\nServer 2016 installed, while the other forty percent has Ubuntu Linux installed.\nYou are required to make sure that the administrative effort, needed for this process, is reduced by employing a suitable Azure\nservice.\nSolution: You recommend the use of Microsoft Managed Desktop.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company’s developers intend to deploy a large number of custom virtual machines on a weekly basis. They will also be\nremoving these virtual machines during the same week it was deployed. Sixty percent of the virtual machines have Windows\nServer 2016 installed, while the other forty percent has Ubuntu Linux installed.\nYou are required to make sure that the administrative effort, needed for this process, is reduced by employing a suitable Azure\nservice.\nSolution: You recommend the use of Azure Reserved Virtual Machines (VM) Instances.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company’s developers intend to deploy a large number of custom virtual machines on a weekly basis. They will also be\nremoving these virtual machines during the same week it was deployed. Sixty percent of the virtual machines have Windows\nServer 2016 installed, while the other forty percent has Ubuntu Linux installed.\nYou are required to make sure that the administrative effort, needed for this process, is reduced by employing a suitable Azure\nservice.\nSolution: You recommend the use of Azure DevTest Labs.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You have been informed by your superiors of the company’s intentions to automate server deployment to Azure. There is,\nhowever, some concern that administrative credentials could be uncovered during this process.\nYou are required to make sure that during the deployment, the administrative credentials are encrypted using a suitable Azure\nsolution.\nSolution: You recommend the use of Azure Information Protection.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You have been informed by your superiors of the company’s intentions to automate server deployment to Azure. There is,\nhowever, some concern that administrative credentials could be uncovered during this process.\nYou are required to make sure that during the deployment, the administrative credentials are encrypted using a suitable Azure\nsolution.\nSolution: You recommend the use of Azure Multi-Factor Authentication (MFA).\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) environment. Users occasionally connect to Azure AD via the Internet.\nYou have been tasked with making sure that users who connect to Azure AD via the internet from an unidentified IP address,\nare automatically encouraged to change passwords.\nSolution: You configure the use of Azure AD Identity Protection.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) environment. Users occasionally connect to Azure AD via the Internet.\nYou have been tasked with making sure that users who connect to Azure AD via the internet from an unidentified IP address,\nare automatically encouraged to change passwords.\nSolution: You configure the use of Azure AD Privileged Identity Management.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure.\nThis strategy should allow for connection types between the web servers and database servers to be controlled.\nSolution: You include network security groups (NSGs) in your strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure.\nThis strategy should allow for connection types between the web servers and database servers to be controlled.\nSolution: You include a local network gateway in your strategy.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company’s Active Directory forest includes thousands of user accounts.\nYou have been informed that all network resources will be migrated to Azure. Thereafter, the on-premises data center will be\nretired.\nYou are required to employ a strategy that reduces the effect on users, once the planned migration has been completed.\nSolution: You plan to require Azure Multi-Factor Authentication (MFA).\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate all its data and resources to Azure.\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure SQL databases.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate all its data and resources to Azure.\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate all its data and resources to Azure.\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure Storage accounts.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate all its data and resources to Azure.\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create Azure virtual machines, Azure SQL databases, and Azure Storage accounts.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more availability zones.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more regions.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more resource groups.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to a scale set.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more scale sets.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating\nsystem.\nSolution: You use PowerShell in Azure Cloud Shell.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating\nsystem.\nSolution: You use the PowerApps portal.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating\nsystem.\nSolution: You use the Azure portal.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\nSolution: Run the script from a computer that runs Linux and has the Azure CLI tools installed.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\nSolution: Run the script from a computer that runs Chrome OS and uses Azure Cloud Shell.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\nSolution: Run the script from a computer that runs macOS and has PowerShell Core 6.0 installed.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating\nsystem.\nSolution: You use Bash in Azure Cloud Shell.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You sign in to the Azure portal and create a resource group named\nRG1.\nFrom Azure documentation, you have the following command that creates a virtual machine named VM1.\naz vm create --resource-group RG1 --name VM1 --image UbuntuLTS --generate-ssh-keys\nYou need to create VM1 in Subscription1 by using the command.\nSolution: From the Azure portal, launch Azure Cloud Shell and select PowerShell. Run the command in Cloud Shell.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You sign in to the Azure portal and create a resource group named\nRG1.\nFrom Azure documentation, you have the following command that creates a virtual machine named VM1.\naz vm create --resource-group RG1 --name VM1 --image UbuntuLTS\n--generate-ssh-keys\nYou need to create VM1 in Subscription1 by using the command.\nSolution: From a computer that runs Windows 10, install Azure CLI. From PowerShell, sign in to Azure and then run the\ncommand.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not\nappear in the review screen.\nYou have an Azure subscription named Subscription1. You sign in to the Azure portal and create a resource group named\nRG1.\nFrom Azure documentation, you have the following command that creates a virtual machine named VM1.\naz vm create --resource-group RG1 --name VM1 --image UbuntuLTS\n--generate-ssh-keys\nYou need to create VM1 in Subscription1 by using the command.\nSolution: From a computer that runs Windows 10, install Azure CLI. From a command prompt, sign in to Azure and then run the\ncommand.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\nSolution: Run the script from a computer that runs Windows 10 and has the Azure PowerShell module installed.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You sign in to the Azure portal and create a resource group named\nRG1.\nFrom Azure documentation, you have the following command that creates a virtual machine named VM1.\naz vm create --resource-group RG1 --name VM1 --image UbuntuLTS --generate-ssh-keys\nYou need to create VM1 in Subscription1 by using the command.\nSolution: From the Azure portal, launch Azure Cloud Shell and select Bash. Run the command in Cloud Shell.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your Azure environment contains multiple Azure virtual machines.\nYou need to ensure that a virtual machine named VM1 is accessible from the Internet over HTTP.\nSolution: You modify a network security group (NSG).\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your Azure environment contains multiple Azure virtual machines.\nYou need to ensure that a virtual machine named VM1 is accessible from the Internet over HTTP.\nSolution: You modify a DDoS protection plan.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your Azure environment contains multiple Azure virtual machines.\nYou need to ensure that a virtual machine named VM1 is accessible from the Internet over HTTP.\nSolution: You modify an Azure firewall.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your Azure environment contains multiple Azure virtual machines.\nYou need to ensure that a virtual machine named VM1 is accessible from the Internet over HTTP.\nSolution: You modify an Azure Traffic Manager profile.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company has an Azure subscription that contains the following unused resources:\n20 user accounts in Azure Active Directory (Azure AD)\nFive groups in Azure AD\n10 public IP addresses\n10 network interfaces\nYou need to reduce the Azure costs for the company.\nSolution: You remove the unused network interfaces.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company has an Azure subscription that contains the following unused resources:\n20 user accounts in Azure Active Directory (Azure AD)\nFive groups in Azure AD\n10 public IP addresses\n10 network interfaces\nYou need to reduce the Azure costs for the company.\nSolution: You remove the unused public IP addresses.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has an Azure subscription that contains the following unused resources:\n20 user accounts in Azure Active Directory (Azure AD)\nFive groups in Azure AD\n10 public IP addresses\n10 network interfaces\nYou need to reduce the Azure costs for the company.\nSolution: You remove the unused user accounts.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company has an Azure subscription that contains the following unused resources:\n20 user accounts in Azure Active Directory (Azure AD)\nFive groups in Azure AD\n10 public IP addresses\n10 network interfaces\nYou need to reduce the Azure costs for the company.\nSolution: You remove the unused groups.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to purchase an Azure subscription.\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone\nor email.\nYou need to recommend which support plan meets the support policy requirement.\nSolution: Recommend a Basic support plan.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to purchase an Azure subscription.\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone\nor email.\nYou need to recommend which support plan meets the support policy requirement.\nSolution: Recommend a Standard support plan.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to purchase an Azure subscription.\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone\nor email.\nYou need to recommend which support plan meets the support policy requirement.\nSolution: Recommend a Premier support plan.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to purchase an Azure subscription.\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone\nor email.\nYou need to recommend which support plan meets the support policy requirement.\nSolution: Recommend a Professional Direct support plan.\nDoes this meet the goal?",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "In which type of cloud model are all the hardware resources owned by a third-party and shared between multiple tenants?",
+    "answers": [
+      { "text": "private", "result": false },
+      { "text": "hybrid", "result": false },
+      { "text": "public", "result": true }
+    ]
+  },
+  {
+    "question": "You have 50 virtual machines hosted on-premises and 50 virtual machines hosted in Azure. The on-premises virtual machines\nand the Azure virtual machines connect to each other.\nWhich type of cloud model is this?",
+    "answers": [
+      { "text": "hybrid", "result": true },
+      { "text": "private", "result": false },
+      { "text": "public", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the\ncustomers of the company. Each application will have several prerequisite applications and services installed.\nYou need to recommend a cloud deployment solution for all the applications.\nWhat should you recommend?",
+    "answers": [
+      { "text": "Software as a Service (SaaS)", "result": false },
+      { "text": "Platform as a Service (PaaS)", "result": false },
+      { "text": "Infrastructure as a Service (laaS)", "result": true }
+    ]
+  },
+  {
+    "question": "To which cloud models can you deploy physical servers?",
+    "answers": [
+      { "text": "private cloud and hybrid cloud only", "result": true },
+      { "text": "private cloud only", "result": false },
+      { "text": "private cloud, hybrid cloud and public cloud", "result": false },
+      { "text": "hybrid cloud only", "result": false }
+    ]
+  },
+  {
+    "question": "What does a customer provide in a software as a service (SaaS) model?",
+    "answers": [
+      { "text": "application data", "result": true },
+      { "text": "data storage", "result": false },
+      { "text": "compute resources", "result": false },
+      { "text": "application software", "result": false }
+    ]
+  },
+  {
+    "question": "What is the first stage in the Microsoft Cloud Adoption Framework for Azure?",
+    "answers": [
+      { "text": "Adopt the cloud.", "result": false },
+      { "text": "Make a plan.", "result": false },
+      { "text": "Ready your organization.", "result": false },
+      { "text": "Define your strategy.", "result": true }
+    ]
+  },
+  {
+    "question": "Which Azure service should you use to collect events from multiple resources into a centralized repository?",
+    "answers": [
+      { "text": "Azure Event Hubs", "result": true },
+      { "text": "Azure Analysis Services", "result": false },
+      { "text": "Azure Monitor", "result": false },
+      { "text": "Azure Stream Analytics", "result": false }
+    ]
+  },
+  {
+    "question": "What is the most severe failure from which an Azure Availability Zone can be used to protect access to Azure service?",
+    "answers": [
+      { "text": "a physical server failure", "result": false },
+      { "text": "an Azure region failure", "result": false },
+      { "text": "a storage failure", "result": false },
+      { "text": "an Azure data center failure", "result": true }
+    ]
+  },
+  {
+    "question": "Which Azure service provides a set of version control tools to manage code?",
+    "answers": [
+      { "text": "Azure Repos", "result": true },
+      { "text": "Azure DevTest Labs", "result": false },
+      { "text": "Azure Storage", "result": false },
+      { "text": "Azure Cosmos DB", "result": false }
+    ]
+  },
+  {
+    "question": "Which service provides serverless computing in Azure?",
+    "answers": [
+      { "text": "Azure Virtual Machines", "result": false },
+      { "text": "Azure Functions", "result": true },
+      { "text": "Azure storage account", "result": false },
+      { "text": "Azure Container Instances", "result": false }
+    ]
+  },
+  {
+    "question": "What can you use to identify underutilized or unused Azure virtual machines?",
+    "answers": [
+      { "text": "Azure Advisor", "result": true },
+      { "text": "Azure Cost Management + Billing", "result": false },
+      { "text": "Azure reservations", "result": false },
+      { "text": "Azure Policy", "result": false }
+    ]
+  },
+  {
+    "question": "Which service provides network traffic filtering across multiple Azure subscriptions and virtual networks?",
+    "answers": [
+      { "text": "Azure Firewall", "result": true },
+      { "text": "an application security group", "result": false },
+      { "text": "Azure DDoS protection", "result": false },
+      { "text": "a network security group (NSG)", "result": false }
+    ]
+  },
+  {
+    "question": "Which Azure service should you use to store certificates?",
+    "answers": [
+      { "text": "Azure Security Center", "result": false },
+      { "text": "an Azure Storage account", "result": false },
+      { "text": "Azure Key Vault", "result": true },
+      { "text": "Azure Information Protection", "result": false }
+    ]
+  },
+  {
+    "question": "Which Azure service can you use as a security information and event management (SIEM) solution?",
+    "answers": [
+      { "text": "Azure Analysis Services", "result": false },
+      { "text": "Azure Sentinel", "result": true },
+      { "text": "Azure Information Protection", "result": false },
+      { "text": "Azure Cognitive Services", "result": false }
+    ]
+  },
+  {
+    "question": "Which resources can be used as a source for a Network security group inbound security rule?",
+    "answers": [
+      { "text": "Service Tags only", "result": false },
+      { "text": "IP Addresses, Service tags and Application security groups", "result": true },
+      { "text": "Application security groups only", "result": false },
+      { "text": "IP Addresses only", "result": false }
+    ]
+  },
+  {
+    "question": "To what should an application connect to retrieve security tokens?",
+    "answers": [
+      { "text": "an Azure Storage account", "result": false },
+      { "text": "Azure Active Directory (Azure AD)", "result": false },
+      { "text": "a certificate store", "result": false },
+      { "text": "an Azure key vault", "result": true }
+    ]
+  },
+  {
+    "question": "What can Azure Information Protection encrypt?",
+    "answers": [
+      { "text": "network traffic", "result": false },
+      { "text": "documents and email messages", "result": true },
+      { "text": "an Azure Storage account", "result": false },
+      { "text": "an Azure SQL database", "result": false }
+    ]
+  },
+  {
+    "question": "What should you use to evaluate whether your company’s Azure environment meets regulatory requirements?",
+    "answers": [
+      { "text": "the Knowledge Center website", "result": false },
+      { "text": "the Advisor blade from the Azure portal", "result": false },
+      { "text": "Compliance Manager from the Security Trust Portal", "result": true },
+      { "text": "the Security Center blade from the Azure portal", "result": false }
+    ]
+  },
+  {
+    "question": "In which Azure support plans can you open a new support request?",
+    "answers": [
+      { "text": "Premier and Professional Direct only", "result": false },
+      { "text": "Premier, Professional Direct, and Standard only", "result": false },
+      { "text": "Premier, Professional Direct, Standard, and Developer only", "result": false },
+      { "text": "Premier, Professional Direct, Standard, Developer, and Basic", "result": true }
+    ]
+  },
+  {
+    "question": "What is guaranteed in an Azure Service Level Agreement (SLA) for virtual machines?",
+    "answers": [
+      { "text": "uptime", "result": true },
+      { "text": "feature availability", "result": false },
+      { "text": "bandwidth", "result": false },
+      { "text": "performance", "result": false }
+    ]
+  },
+  {
+    "question": "What is required to use Azure Cost Management?",
+    "answers": [
+      { "text": "a Dev/Test subscription", "result": false },
+      { "text": "Software Assurance", "result": false },
+      { "text": "an Enterprise Agreement (EA)", "result": false },
+      { "text": "a pay-as-you-go subscription", "result": true }
+    ]
+  },
+  {
+    "question": "Which statement accurately describes the Modern Lifecycle Policy for Azure services?",
+    "answers": [
+      { "text": "Microsoft provides mainstream support for a service for five years.", "result": false },
+      { "text": "Microsoft provides a minimum of 12 months' notice before ending support for a service.", "result": true },
+      {
+        "text": "After a service is made generally available, Microsoft provides support for the service for a minimum of four years.",
+        "result": false
+      },
+      {
+        "text": "When a service is retired, you can purchase extended support for the service for up to five years.",
+        "result": false
+      }
+    ]
+  },
+  {
+    "question": "Who can use the Azure Total Cost of Ownership (TCO) calculator?",
+    "answers": [
+      { "text": "billing readers for an Azure subscription only", "result": false },
+      { "text": "owners for an Azure subscription only", "result": false },
+      { "text": "anyone", "result": true },
+      {
+        "text": "all users who have an account in Azure Active Directory (Azure AD) that is linked to an Azure subscription only",
+        "result": false
+      }
+    ]
+  },
+  {
+    "question": "Which task can you perform by using Azure Advisor?",
+    "answers": [
+      { "text": "Integrate Active Directory and Azure Active Directory (Azure AD).", "result": false },
+      { "text": "Estimate the costs of an Azure solution.", "result": true },
+      { "text": "Confirm that Azure subscription security follows best practices.", "result": false },
+      { "text": "Evaluate which on-premises resources can be migrated to Azure.", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has datacenters in Los Angeles and New York. The company has a Microsoft Azure subscription.\nYou are configuring the two datacenters as geo-clustered sites for site resiliency.\nYou need to recommend an Azure storage redundancy option.\nYou have the following data storage requirements:\nData must be stored on multiple nodes.\nData must be stored on nodes in separate geographic locations.\nData can be read from the secondary location as well as from the primary location\nWhich of the following Azure stored redundancy options should you recommend?",
+    "answers": [
+      { "text": "Geo-redundant storage", "result": false },
+      { "text": "Read-only geo-redundant storage", "result": true },
+      { "text": "Zone-redundant storage", "result": false },
+      { "text": "Locally redundant storage", "result": false }
+    ]
+  },
+  {
+    "question": "Your developers have created a portal web app for users in the Miami branch office. The web app will be publicly accessible\nand used by the Miami users to retrieve customer and product information. The web app is currently running in an on-premises\ntest environment.\nYou plan to host the web app on Azure.\nYou need to determine which Azure web tier plan to host the web app. The web tier plan must meet the following requirements:\nThe website will use the miami.weyland.com URL.\nThe website will be deployed to two instances.\nSSL support must be included.\nThe website requires 12 GB of storage.\nCosts must be minimized.\nWhich web tier plan should you use?",
+    "answers": [
+      { "text": "Standard", "result": true },
+      { "text": "Basic", "result": false },
+      { "text": "Free", "result": false },
+      { "text": "Shared", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has virtual machines (VMs) hosted in Microsoft Azure. The VMs are located in a single Azure virtual network\nnamed VNet1.\nThe company has users that work remotely. The remote workers require access to the VMs on VNet1.\nYou need to provide access for the remote workers.\nWhat should you do?",
+    "answers": [
+      { "text": "Configure a Site-to-Site (S2S) VPN.", "result": false },
+      { "text": "Configure a VNet-toVNet VPN.", "result": false },
+      { "text": "Configure a Point-to-Site (P2S) VPN.", "result": true },
+      { "text": "Configure DirectAccess on a Windows Server 2012 server VM.", "result": false },
+      { "text": "Configure a Multi-Site VPN", "result": false }
+    ]
+  },
+  {
+    "question": "You have an on-premises network that contains several servers.\nYou plan to migrate all the servers to Azure.\nYou need to recommend a solution to ensure that some of the servers are available if a single Azure data center goes offline\nfor an extended period.\nWhat should you include in the recommendation?",
+    "answers": [
+      { "text": "fault tolerance", "result": true },
+      { "text": "elasticity", "result": false },
+      { "text": "scalability", "result": false },
+      { "text": "low latency", "result": false }
+    ]
+  },
+  {
+    "question": "Your company hosts an accounting application named App1 that is used by all the customers of the company.\nApp1 has low usage during the first three weeks of each month and very high usage during the last week of each month.\nWhich benefit of Azure Cloud Services supports cost management for this type of usage pattern?",
+    "answers": [
+      { "text": "high availability", "result": false },
+      { "text": "high latency", "result": false },
+      { "text": "elasticity", "result": true },
+      { "text": "load balancing", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to migrate a web application to Azure. The web application is accessed by external users.\nYou need to recommend a cloud deployment solution to minimize the amount of administrative effort used to manage the web\napplication.\nWhat should you include in the recommendation?",
+    "answers": [
+      { "text": "Software as a Service (SaaS)", "result": false },
+      { "text": "Platform as a Service (PaaS)", "result": true },
+      { "text": "Infrastructure as a Service (IaaS)", "result": false },
+      { "text": "Database as a Service (DaaS)", "result": false }
+    ]
+  },
+  {
+    "question": "You have an on-premises network that contains 100 servers.\nYou need to recommend a solution that provides additional resources to your users. The solution must minimize capital and\noperational expenditure costs.\nWhat should you include in the recommendation?",
+    "answers": [
+      { "text": "a complete migration to the public cloud", "result": false },
+      { "text": "an additional data center", "result": false },
+      { "text": "a private cloud", "result": false },
+      { "text": "a hybrid cloud", "result": true }
+    ]
+  },
+  {
+    "question": "You plan to migrate several servers from an on-premises network to Azure.\nWhat is an advantage of using a public cloud service for the servers over an on-premises network?",
+    "answers": [
+      { "text": "The public cloud is owned by the public, NOT a private corporation", "result": false },
+      {
+        "text": "The public cloud is a crowd-sourcing solution that provides corporations with the ability to enhance the cloud",
+        "result": false
+      },
+      { "text": "All public cloud resources can be freely accessed by every member of the public", "result": false },
+      {
+        "text": "The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud",
+        "result": true
+      }
+    ]
+  },
+  {
+    "question": "You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center.\nYou plan to migrate all the virtual machines to an Azure pay-as-you-go subscription.\nYou need to identify which expenditure model to use for the planned Azure solution.\nWhich expenditure model should you identify?",
+    "answers": [
+      { "text": "operational", "result": true },
+      { "text": "elastic", "result": false },
+      { "text": "capital", "result": false },
+      { "text": "scalable", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure.\nWhich resource is an example of IaaS?",
+    "answers": [
+      { "text": "an Azure web app", "result": false },
+      { "text": "an Azure virtual machine", "result": true },
+      { "text": "an Azure logic app", "result": false },
+      { "text": "an Azure SQL database", "result": false }
+    ]
+  },
+  {
+    "question": "You have 50 virtual machines hosted on-premises and 50 virtual machines hosted in Azure. The on-premises virtual machines\nand the Azure virtual machines connect to each other.\nWhich type of cloud model is this?",
+    "answers": [
+      { "text": "hybrid", "result": true },
+      { "text": "private", "result": false },
+      { "text": "public", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the\ncustomers of the company. Each application will have several prerequisite applications and services installed.\nYou need to recommend a cloud deployment solution for all the applications.\nWhat should you recommend?",
+    "answers": [
+      { "text": "Software as a Service (SaaS)", "result": false },
+      { "text": "Platform as a Service (PaaS)", "result": false },
+      { "text": "Infrastructure as a Service (laaS)", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate all its data and resources to Azure.\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company’s migration plan.\nWhat should you create?",
+    "answers": [
+      { "text": "Azure virtual machines, Azure SQL databases, and Azure Storage accounts.", "result": false },
+      {
+        "text": "an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed.",
+        "result": false
+      },
+      { "text": "an Azure App Service and Azure SQL databases.", "result": true },
+      { "text": "Azure storage account and web server in Azure virtual machines.", "result": false }
+    ]
+  },
+  {
+    "question": "One of the benefits of Azure SQL Data Warehouse is that high availability is built into the platform.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed", "result": true },
+      { "text": "automatic scaling", "result": false },
+      { "text": "data compression", "result": false },
+      { "text": "versioning", "result": false }
+    ]
+  },
+  {
+    "question": "You need to identify the type of failure for which an Azure Availability Zone can be used to protect access to Azure services.\nWhat should you identify?",
+    "answers": [
+      { "text": "a physical server failure", "result": false },
+      { "text": "an Azure region failure", "result": false },
+      { "text": "a storage failure", "result": false },
+      { "text": "an Azure data center failure", "result": true }
+    ]
+  },
+  {
+    "question": "Resource groups provide organizations with the ability to manage the compliance of Azure resources across multiple\nsubscriptions.",
+    "answers": [
+      { "text": "No change is needed", "result": false },
+      { "text": "Management groups", "result": true },
+      { "text": "Azure policies", "result": false },
+      { "text": "Azure App Service plans", "result": false }
+    ]
+  },
+  {
+    "question": "You attempt to create several managed Microsoft SQL Server instances in an Azure environment and receive a message that\nyou must increase your Azure subscription limits.\nWhat should you do to increase the limits?",
+    "answers": [
+      { "text": "Create a service health alert", "result": false },
+      { "text": "Upgrade your support plan", "result": false },
+      { "text": "Modify an Azure policy", "result": false },
+      { "text": "Create a new support request", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to move several servers to Azure.\nThe company’s compliance policy states that a server named FinServer must be on a separate network segment.\nYou are evaluating which Azure services can be used to meet the compliance policy requirements.\nWhich Azure solution should you recommend?",
+    "answers": [
+      { "text": "a resource group for FinServer and another resource group for all the other servers", "result": false },
+      { "text": "a virtual network for FinServer and another virtual network for all the other servers", "result": true },
+      { "text": "a VPN for FinServer and a virtual network gateway for each other server", "result": false },
+      { "text": "one resource group for all the servers and a resource lock for FinServer", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to map a network drive from several computers that run Windows 10 to Azure Storage.\nYou need to create a storage solution in Azure for the planned mapped drive.\nWhat should you create?",
+    "answers": [
+      { "text": "an Azure SQL database", "result": false },
+      { "text": "a virtual machine data disk", "result": false },
+      { "text": "a Files service in a storage account", "result": true },
+      { "text": "a Blobs service in a storage account", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to start using Azure and will migrate all its network resources to Azure.\nYou need to start the planning process by exploring Azure.\nWhat should you create first?",
+    "answers": [
+      { "text": "a subscription", "result": true },
+      { "text": "a resource group", "result": false },
+      { "text": "a virtual network", "result": false },
+      { "text": "a management group", "result": false }
+    ]
+  },
+  {
+    "question": "You need to be notified when Microsoft plans to perform maintenance that can affect the resources deployed to an Azure\nsubscription.\nWhat should you use?",
+    "answers": [
+      { "text": "Azure Monitor", "result": false },
+      { "text": "Azure Service Health", "result": true },
+      { "text": "Azure Advisor", "result": false },
+      { "text": "Microsoft Trust Center", "result": false }
+    ]
+  },
+  {
+    "question": "You need to purchase a third-party virtual security appliance that you will deploy to an Azure subscription.\nWhat should you use?",
+    "answers": [
+      { "text": "Azure subscriptions", "result": false },
+      { "text": "Azure Security Center", "result": false },
+      { "text": "Azure Marketplace", "result": true },
+      { "text": "Microsoft Store", "result": false }
+    ]
+  },
+  {
+    "question": "A team of developers at your company plans to deploy, and then remove, 50 customized virtual machines each week. Thirty of\nthe virtual machines run Windows Server 2016 and 20 of the virtual machines run Ubuntu Linux.\nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual\nmachines.\nWhat should you recommend?",
+    "answers": [
+      { "text": "Azure Reserved Virtual Machines (VM) Instances", "result": false },
+      { "text": "Azure virtual machine scale sets", "result": false },
+      { "text": "Azure DevTest Labs", "result": true },
+      { "text": "Microsoft Managed Desktop", "result": false }
+    ]
+  },
+  {
+    "question": "You have a virtual machine named VM1 that runs Windows Server 2016. VM1 is in the East US Azure region.\nWhich Azure service should you use from the Azure portal to view service failure notifications that can affect the availability of\nVM1?",
+    "answers": [
+      { "text": "Azure Service Fabric", "result": false },
+      { "text": "Azure Monitor", "result": false },
+      { "text": "Azure virtual machines", "result": true },
+      { "text": "Azure Advisor", "result": false }
+    ]
+  },
+  {
+    "question": "You have an on-premises application that sends email notifications automatically based on a rule.\nYou plan to migrate the application to Azure.\nYou need to recommend a serverless computing solution for the application.\nWhat should you include in the recommendation?",
+    "answers": [
+      { "text": "a web app", "result": false },
+      { "text": "a server image in Azure Marketplace", "result": false },
+      { "text": "a logic app", "result": true },
+      { "text": "an API app", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to deploy a website to Azure. The website will be accessed by users worldwide and will host large video files.\nYou need to recommend which Azure feature must be used to provide the best video playback experience.\nWhat should you recommend?",
+    "answers": [
+      { "text": "an application gateway", "result": false },
+      { "text": "an Azure ExpressRoute circuit", "result": false },
+      { "text": "a content delivery network (CDN)", "result": true },
+      { "text": "an Azure Traffic Manager profile", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to deploy an Artificial Intelligence (AI) solution in Azure.\nWhat should the company use to build, test, and deploy predictive analytics solutions?",
+    "answers": [
+      { "text": "Azure Logic Apps", "result": false },
+      { "text": "Azure Machine Learning Designer", "result": true },
+      { "text": "Azure Batch", "result": false },
+      { "text": "Azure Cosmos DB", "result": false }
+    ]
+  },
+  {
+    "question": "A team of developers at your company plans to deploy, and then remove, 50 virtual machines each week. All the virtual\nmachines are configured by using Azure Resource Manager templates.\nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual\nmachines.\nWhat should you recommend?",
+    "answers": [
+      { "text": "Azure Reserved Virtual Machines (VM) Instances", "result": false },
+      { "text": "Azure virtual machine scale sets", "result": false },
+      { "text": "Azure DevTest Labs", "result": true },
+      { "text": "Microsoft Managed Desktop", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has several business units.\nEach business unit requires 20 different Azure resources for daily operation. All the business units require the same type of\nAzure resources.\nYou need to recommend a solution to automate the creation of the Azure resources.\nWhat should you include in the recommendations?",
+    "answers": [
+      { "text": "Azure Resource Manager templates", "result": true },
+      { "text": "virtual machine scale sets", "result": false },
+      { "text": "the Azure API Management service", "result": false },
+      { "text": "management groups", "result": false }
+    ]
+  },
+  {
+    "question": "You need to configure an Azure solution that meets the following requirements:\nSecures websites from attacks\nGenerates reports that contain details of attempted attacks\nWhat should you include in the solution?",
+    "answers": [
+      { "text": "Azure Firewall", "result": false },
+      { "text": "a network security group (NSG)", "result": false },
+      { "text": "Azure Information Protection", "result": false },
+      { "text": "DDoS protection", "result": true }
+    ]
+  },
+  {
+    "question": "Your Azure environment contains multiple Azure virtual machines.\nYou need to ensure that a virtual machine named VM1 is accessible from the Internet over HTTP.\nWhat are two possible solutions? Each correct answer presents a complete solution.",
+    "answers": [
+      { "text": "Modify an Azure Traffic Manager profile", "result": false },
+      { "text": "Modify a network security group (NSG)", "result": true },
+      { "text": "Modify a DDoS protection plan", "result": false },
+      { "text": "Modify an Azure firewall", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure environment that contains 10 virtual networks and 100 virtual machines.\nYou need to limit the amount of inbound traffic to all the Azure virtual networks.\nWhat should you create?",
+    "answers": [
+      { "text": "one application security group (ASG)", "result": false },
+      { "text": "10 virtual network gateways", "result": false },
+      { "text": "10 Azure ExpressRoute circuits", "result": false },
+      { "text": "one Azure firewall", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Key Vault is used to store secrets for Azure Active Directory (Azure AD) user accounts.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed", "result": false },
+      { "text": "Azure Active Directory (Azure AD) administrative accounts", "result": false },
+      { "text": "Personally Identifiable Information (PII)", "result": false },
+      { "text": "server applications", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to automate the deployment of servers to Azure.\nYour manager is concerned that you may expose administrative credentials during the deployment.\nYou need to recommend an Azure solution that encrypts the administrative credentials during the deployment.\nWhat should you include in the recommendation?",
+    "answers": [
+      { "text": "Azure Key Vault", "result": true },
+      { "text": "Azure Information Protection", "result": false },
+      { "text": "Azure Security Center", "result": false },
+      { "text": "Azure Multi-Factor Authentication (MFA)", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to control the ports that devices on the Internet can use to access the virtual machines.\nWhat should you use?",
+    "answers": [
+      { "text": "a network security group (NSG)", "result": true },
+      { "text": "an Azure Active Directory (Azure AD) role", "result": false },
+      { "text": "an Azure Active Directory group", "result": false },
+      { "text": "an Azure key vault", "result": false }
+    ]
+  },
+  {
+    "question": "You need to collect and automatically analyze security events from Azure Active Directory (Azure AD).\nWhat should you use?",
+    "answers": [
+      { "text": "Azure Sentinel", "result": true },
+      { "text": "Azure Synapse Analytics", "result": false },
+      { "text": "Azure AD Connect", "result": false },
+      { "text": "Azure Key Vault", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to deploy several web servers and several database servers to Azure.\nYou need to recommend an Azure solution to limit the types of connections from the web servers to the database servers.\nWhat should you include in the recommendation?",
+    "answers": [
+      { "text": "network security groups (NSGs)", "result": true },
+      { "text": "Azure Service Bus", "result": false },
+      { "text": "a local network gateway", "result": false },
+      { "text": "a route filter", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1.\nYou plan to encrypt VM1 by using Azure Disk Encryption.\nWhich Azure resource must you create first?",
+    "answers": [
+      { "text": "n Azure Storage account", "result": false },
+      { "text": "n Azure Key Vault", "result": true },
+      { "text": "Azure Information Protection policy", "result": false },
+      { "text": "n Encryption key", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure Sentinel workspace.\nYou need to automate responses to threats detected by Azure Sentinel.\nWhat should you use?",
+    "answers": [
+      { "text": "adaptive network hardening in Azure Security Center", "result": false },
+      { "text": "Azure Service Health", "result": false },
+      { "text": "Azure Monitor workbooks", "result": true },
+      { "text": "adaptive application controls in Azure Security Center", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has an Azure subscription that contains resources in several regions.\nYou need to create the Azure resource that must be used to meet the policy requirement.\nWhat should you create?",
+    "answers": [
+      { "text": "a read-only lock", "result": false },
+      { "text": "an Azure policy", "result": true },
+      { "text": "a management group", "result": false },
+      { "text": "a reservation", "result": false }
+    ]
+  },
+  {
+    "question": "From Azure Cloud Shell, you can track your company’s regulatory standards and regulations, such as ISO 27001.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed.” If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed.", "result": false },
+      { "text": "the Microsoft Cloud Partner Portal", "result": false },
+      { "text": "Compliance Manager", "result": false },
+      { "text": "the Trust Center", "result": true }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate all on-premises data to Azure.\nYou need to identify whether Azure complies with the company’s regional requirements.\nWhat should you use?",
+    "answers": [
+      { "text": "the Knowledge Center", "result": false },
+      { "text": "Azure Marketplace", "result": false },
+      { "text": "the Azure portal", "result": false },
+      { "text": "the Trust Center", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Germany can be used by legal residents of Germany only.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "no change is needed", "result": false },
+      { "text": "only enterprises that are registered in Germany", "result": false },
+      { "text": "only enterprises that purchase their azure licenses from a partner based in Germany", "result": false },
+      { "text": "any user or enterprise that requires its data to reside in Germany", "result": true }
+    ]
+  },
+  {
+    "question": "You need to ensure that when Azure Active Directory (Azure AD) users connect to Azure AD from the Internet by using an\nanonymous IP address, the users are prompted automatically to change their password.\nWhich Azure service should you use?",
+    "answers": [
+      { "text": "Azure AD Connect Health", "result": false },
+      { "text": "Azure AD Privileged Identity Management", "result": false },
+      { "text": "Azure Advanced Threat Protection (ATP)", "result": false },
+      { "text": "Azure AD Identity Protection", "result": true }
+    ]
+  },
+  {
+    "question": "Your network contains an Active Directory forest. The forest contains 5,000 user accounts.\nYour company plans to migrate all network resources to Azure and to decommission the on-premises data center.\nYou need to recommend a solution to minimize the impact on users after the planned migration.\nWhat should you recommend?",
+    "answers": [
+      { "text": "Implement Azure Multi-Factor Authentication (MFA)", "result": false },
+      { "text": "Sync all the Active Directory user accounts to Azure Active Directory (Azure AD)", "result": true },
+      { "text": "Instruct all users to change their password", "result": false },
+      { "text": "Create a guest user account in Azure Active Directory (Azure AD) for each user", "result": false }
+    ]
+  },
+  {
+    "question": "You have a resource group named RG1.\nYou need to prevent the creation of virtual machines in RG1. The solution must ensure that other objects can be created in\nRG1.\nWhat should you use?",
+    "answers": [
+      { "text": "a lock", "result": false },
+      { "text": "an Azure role", "result": false },
+      { "text": "a tag", "result": false },
+      { "text": "an Azure policy", "result": true }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription and 100 Windows 10 devices.\nYou need to ensure that only users whose devices have the latest security patches installed can access Azure Active Directory\n(Azure AD)-integrated applications.\nWhat should you implement?",
+    "answers": [
+      { "text": "a conditional access policy", "result": true },
+      { "text": "Azure Bastion", "result": false },
+      { "text": "Azure Firewall", "result": false },
+      { "text": "Azure Policy", "result": false }
+    ]
+  },
+  {
+    "question": "Where will you find details on the personal data collected by Microsoft, how Microsoft uses the data, and what the data is used\nfor?",
+    "answers": [
+      { "text": "the Data Protection Addendum", "result": false },
+      { "text": "the Microsoft Online Services Terms", "result": false },
+      { "text": "the Microsoft Privacy Statement", "result": true },
+      { "text": "Azure Security Center", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has 10 offices. You plan to generate several billing reports from the Azure portal. Each report will contain the\nAzure resource utilization of each office.\nWhich Azure Resource Manager feature should you use before you generate the reports?",
+    "answers": [
+      { "text": "tags", "result": true },
+      { "text": "templates", "result": false },
+      { "text": "locks", "result": false },
+      { "text": "policies", "result": false }
+    ]
+  },
+  {
+    "question": "If Microsoft plans to end support for an Azure service that does NOT have a successor service, Microsoft will provide\nnotification at least 12 months before.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed.", "result": true },
+      { "text": "6 months", "result": false },
+      { "text": "90 days", "result": false },
+      { "text": "30 days", "result": false }
+    ]
+  },
+  {
+    "question": "A support plan solution that gives you best practice information, health status and notifications, and 24/7 access to billing\ninformation at the lowest possible cost is a Standard support plan.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed", "result": false },
+      { "text": "Developer", "result": false },
+      { "text": "Basic", "result": true },
+      { "text": "Premier", "result": false }
+    ]
+  },
+  {
+    "question": "You can create an Azure support request from support.microsoft.com.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed.” If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed.", "result": false },
+      { "text": "the Azure portal", "result": true },
+      { "text": "the Knowledge Center", "result": false },
+      { "text": "the Security & Compliance admin center", "result": false }
+    ]
+  },
+  {
+    "question": "The Azure Standard support plan is the lowest cost option to receive 24x7 access to support engineers by phone.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is\nincorrect, select the answer choice that makes the statement correct.",
+    "answers": [
+      { "text": "No change is needed", "result": true },
+      { "text": "Developer", "result": false },
+      { "text": "Basic", "result": false },
+      { "text": "Professional Direct", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to request an architectural review of an Azure environment from Microsoft.\nThe company currently has a Basic support plan.\nYou need to recommend a new support plan for the company. The solution must minimize costs.\nWhich support plan should you recommend?",
+    "answers": [
+      { "text": "Premier", "result": false },
+      { "text": "Developer", "result": true },
+      { "text": "Professional Direct", "result": false },
+      { "text": "Standard", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has a Software Assurance agreement that includes Microsoft SQL Server licenses.\nYou plan to deploy SQL Server on Azure virtual machines.\nWhat should you do to minimize licensing costs for the deployment?",
+    "answers": [
+      { "text": "Deallocate the virtual machines during off hours.", "result": false },
+      { "text": "Use Azure Hybrid Benefit.", "result": true },
+      { "text": "Configure Azure Cost Management budgets.", "result": false },
+      { "text": "Use Azure reservations.", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has 10 departments.\nThe company plans to implement an Azure environment.\nYou need to ensure that each department can use a different payment option for the Azure services it consumes.\nWhat should you create for each department?",
+    "answers": [
+      { "text": "a reservation", "result": false },
+      { "text": "a subscription", "result": true },
+      { "text": "a resource group", "result": false },
+      { "text": "a container instance", "result": false }
+    ]
+  },
+  {
+    "question": "Your company has an Azure subscription that contains the following unused resources:\n20 user accounts in Azure Active Directory (Azure AD)\nFive groups in Azure AD\n10 public IP addresses\n10 network interfaces\nYou need to reduce the Azure costs for the company.\nWhich unused resources should you remove?",
+    "answers": [
+      { "text": "the network interfaces", "result": false },
+      { "text": "the public IP addresses", "result": true },
+      { "text": "the groups", "result": false },
+      { "text": "the user accounts", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure application that uses the services shown in the following table.\nAzure virtual machines 99.9%\nAzure SQL Database 99.99%\nHow should you calculate the composite SLA for the application?",
+    "answers": [
+      { "text": "0.999 * 0.9999 = 0.9989001 = 99.89001%", "result": true },
+      { "text": "0.999 / 0.9999 = 0.9991 = 99.91%", "result": false },
+      { "text": "Max(0.999, 0.9999) = 0.9999 = 99.99%", "result": false },
+      { "text": "Min(0.999, 0.9999) = 0.999 = 99.9%", "result": false }
+    ]
+  },
+  {
+    "question": "What are two characteristics of the public cloud? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "dedicated hardware", "result": false },
+      { "text": "unsecured connections", "result": false },
+      { "text": "limited storage", "result": false },
+      { "text": "metered pricing", "result": true },
+      { "text": "self-service management", "result": true }
+    ]
+  },
+  {
+    "question": "Your company has an on-premises network that contains multiple servers.\nThe company plans to reduce the following administrative responsibilities:\nBacking up application data\nReplacing failed server hardware\nManaging physical server security\nUpdating server operating systems\nManaging permissions to shared documents\nThe company plans to migrate servers to Azure virtual machines.\nYou need to identify which administrative responsibilities will be eliminated after the planned migration.\nWhich two responsibilities should you identify? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "Replacing failed server hardware", "result": true },
+      { "text": "Backing up application data", "result": false },
+      { "text": "Managing physical server security", "result": true },
+      { "text": "Updating server operating systems", "result": false },
+      { "text": "Managing permissions to shared documents", "result": false }
+    ]
+  },
+  {
+    "question": "You plan to store 20 TB of data in Azure. The data will be accessed infrequently and visualized by using Microsoft Power BI.\nYou need to recommend a storage solution for the data.\nWhich two solutions should you recommend? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "Azure Data Lake", "result": true },
+      { "text": "Azure Cosmos DB", "result": false },
+      { "text": "Azure SQL Data Warehouse", "result": true },
+      { "text": "Azure SQL Database", "result": false },
+      { "text": "Azure Database for PostgreSQL", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to migrate to Azure.\nThe company has several departments. All the Azure resources used by each department will be managed by a department\nadministrator.\nWhat are two possible techniques to segment Azure for the departments? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "multiple subscriptions", "result": true },
+      { "text": "multiple Azure Active Directory (Azure AD) directories", "result": false },
+      { "text": "multiple regions", "result": false },
+      { "text": "multiple resource groups", "result": true }
+    ]
+  },
+  {
+    "question": "You have an Azure environment that contains multiple Azure virtual machines.\nYou plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure\nvirtual machines.\nYou need to recommend which Azure resources must be created for the planned solution.\nWhich two Azure resources should you include in the recommendation? Each correct answer presents part of the solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "a virtual network gateway", "result": true },
+      { "text": "a load balancer", "result": false },
+      { "text": "an application gateway", "result": false },
+      { "text": "a virtual network", "result": false },
+      { "text": "a gateway subnet", "result": true }
+    ]
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines remain available if a single data center fails.\nWhat are two possible solutions? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "Deploy the virtual machines to two or more availability zones.", "result": true },
+      { "text": "Deploy the virtual machines to two or more resource groups.", "result": false },
+      { "text": "Deploy the virtual machines to a scale set.", "result": false },
+      { "text": "Deploy the virtual machines to two or more regions.", "result": true }
+    ]
+  },
+  {
+    "question": "A support engineer plans to perform several Azure management tasks by using the Azure CLI.\nYou install the CLI on a computer.\nYou need to tell the support engineer which tools to use to run the CLI.\nWhich two tools should you instruct the support engineer to use? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "Command Prompt", "result": true },
+      { "text": "Azure Resource Explorer", "result": false },
+      { "text": "Windows PowerShell", "result": true },
+      { "text": "Windows Defender Firewall", "result": false },
+      { "text": "Network and Sharing Center", "result": false }
+    ]
+  },
+  {
+    "question": "Your company plans to deploy several million sensors that will upload data to Azure.\nYou need to identify which Azure resources must be created to support the planned solution.\nWhich two Azure resources should you identify? Each correct answer presents part of the solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "Azure Data Lake", "result": true },
+      { "text": "Azure Queue storage", "result": false },
+      { "text": "Azure File Storage", "result": false },
+      { "text": "Azure IoT Hub", "result": true },
+      { "text": "Azure Notification Hubs", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure web app.\nYou need to manage the settings of the web app from an iPhone.\nWhat are two Azure management tools that you can use? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "Azure CLI", "result": false },
+      { "text": "the Azure portal", "result": true },
+      { "text": "Azure Cloud Shell", "result": true },
+      { "text": "Windows PowerShell", "result": false },
+      { "text": "Azure Storage Explorer", "result": false }
+    ]
+  },
+  {
+    "question": "You have an Azure environment.\nYou need to create a new Azure virtual machine from a tablet that runs the Android operating system.\nWhat are three possible solutions? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 3,
+    "answers": [
+      { "text": "Use Bash in Azure Cloud Shell.", "result": true },
+      { "text": "Use PowerShell in Azure Cloud Shell.", "result": true },
+      { "text": "Use the PowerApps portal.", "result": false },
+      { "text": "Use the Security & Compliance admin center.", "result": false },
+      { "text": "Use the Azure portal.", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\nWhich three computers can run the script? Each correct answer presents a complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 3,
+    "answers": [
+      { "text": "a computer that runs macOS and has PowerShell Core 6.0 installed.", "result": false },
+      { "text": "a computer that runs Windows 10 and has the Azure PowerShell module installed.", "result": true },
+      { "text": "a computer that runs Linux and has the Azure PowerShell module installed.", "result": true },
+      { "text": "a computer that runs Linux and has the Azure CLI tools installed.", "result": false },
+      { "text": "a computer that runs Chrome OS and uses Azure Cloud Shell.", "result": true }
+    ]
+  },
+  {
+    "question": "Which two types of customers are eligible to use Azure Government to develop a cloud solution? Each correct answer presents\na complete solution.",
+    "isMultiple": true,
+    "totalAnswer": 2,
+    "answers": [
+      { "text": "a Canadian government contractor", "result": false },
+      { "text": "a European government contractor", "result": false },
+      { "text": "a United States government entity", "result": true },
+      { "text": "a United States government contractor", "result": true },
+      { "text": "a European government entity", "result": false }
+    ]
+  }
+]

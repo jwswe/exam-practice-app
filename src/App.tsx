@@ -18,8 +18,7 @@ function App() {
 
       <main className="main">
         <Routes>
-          {/* <Route path="/account" component={AccountView} /> */}
-          <Route path="/" element={<Exam />} />
+          <Route path="/exam" element={<Exam />} />
           <Route path="/import" element={<Importer />} />
         </Routes>
       </main>

@@ -1,14 +1,14 @@
-#root{
+#root {
   height: 100%;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(3, 21, 39);
+}
+.main {
+  background-color: rgb(3, 21, 39);
 }
 
-.main{
-  background-color: rgb(241, 241, 241);
-  height: 100%;
-}
-
-html, body {
+html,
+body {
+  background-color: rgb(3, 21, 39);
   height: 100%;
   margin: 0px;
 }
