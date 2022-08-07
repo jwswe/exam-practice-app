@@ -1,5 +1,5 @@
 import { Paper, styled, IconButton, Switch, FormControlLabel } from '@mui/material';
-import { ArrowCircleLeft, ArrowCircleRight } from '@mui/icons-material';
+import { ArrowCircleLeft, ArrowCircleRight, ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { Container } from '@mui/system';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
@@ -186,18 +186,18 @@ export const Exam = () => {
 
   return (
     <Container>
-      <ButtonContainer>
+      <TopContainer>
         <IconButton color="primary" aria-label="Previous" component="label">
           <Button hidden onClick={() => changeQuestion(false)} disabled={current === 0} />
-          <ArrowCircleLeft style={{ width: 50, height: 50 }} />
+          <ChevronLeft style={{ width: 50, height: 50 }} />
         </IconButton>
+        <Heading>{`Question: ${current + 1}/${totalQuestion}`}</Heading>
         <IconButton color="primary" aria-label="Next" component="label">
           <Button hidden onClick={() => changeQuestion(true)} disabled={current + 1 === totalQuestion} />
-          <ArrowCircleRight style={{ width: 50, height: 50 }} />
+          <ChevronRight style={{ width: 50, height: 50 }} />
         </IconButton>
-      </ButtonContainer>
+      </TopContainer>
       <StyledPaper>
-        <Heading>{`Question: ${current + 1}/${totalQuestion}`}</Heading>
         <QuestionText key={currentQuestion.question} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }}>
           {currentQuestion.question}
         </QuestionText>
@@ -212,13 +212,14 @@ export const Exam = () => {
 };
 
 const StyledPaper = styled(Paper)({
-  padding: 50,
+  padding: 30,
   background: 'rgb(0, 30, 60)',
   marginLeft: 0,
   marginRight: 0,
 });
 
 const Label = styled(FormControlLabel)({
+  marginTop: 20,
   color: selectedColor,
   whiteSpace: 'pre-line',
 });
@@ -244,22 +245,21 @@ const AnswerContainer = styled('div')({
   paddingBottom: 50,
 });
 const Heading = styled(Text)({
-  marginBottom: 25,
   fontWeight: 500,
 });
 
 const Answer = styled(Text)({
   cursor: 'default',
-  fontSize: 18,
-  padding: 5,
+  fontSize: 20,
   marginTop: 10,
 
   borderRadius: 5,
   '&:hover': {},
 });
 
-const ButtonContainer = styled('div')({
-  marginTop: 50,
+const TopContainer = styled('div')({
+  marginTop: 20,
   display: 'flex',
   justifyContent: 'space-between',
+  alignItems: 'center',
 });
