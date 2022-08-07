@@ -168,9 +168,7 @@ export const Exam = () => {
 
         return (
           <Answer
-            key={a.text}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            key={`answer-${i}`}
             style={{
               color: displayColor,
               fontWeight,
