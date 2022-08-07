@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { QuestionPrefix } from '../constant';
 import question from '../data/questions_1.json';
 import { Answered, Question } from '../types/type';
+import { useSearchParams } from 'react-router-dom';
 
 const correctColor = '#118E20';
 const incorrectColor = '#F15050';
@@ -19,7 +20,8 @@ const loadQuestion = (number: number) => {
 };
 
 export const Exam = () => {
-  const [current, setCurrent] = useState(0);
+  const [searchParams] = useSearchParams();
+  const [current, setCurrent] = useState<number>(Number(searchParams.get('q')) - 1);
   const [selected, setSelected] = useState<number>(-1);
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [color, setColor] = useState(selectedColor);

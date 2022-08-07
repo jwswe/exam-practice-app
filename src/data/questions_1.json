@@ -273,7 +273,7 @@
     ]
   },
   {
-    "question": "A company can extend an intemal network by adding its own\nphysical servers to the public cloud.",
+    "question": "A company can extend an internal network by adding its own\nphysical servers to the public cloud.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
@@ -338,36 +338,36 @@
   {
     "question": "A single Microsoft account can be\nused to manage multiple Azure\nsubscriptions.",
     "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Two Azure subscriptions can be\nmerged into a single subscription.",
+    "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "Two Azure subscriptions can be\nmerged into a single subscription.",
+    "question": "A company can use resources from\nmultiple subscriptions.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
     ]
   },
   {
-    "question": "A company can use resources from\nmultiple subscriptions.",
-    "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
-    ]
-  },
-  {
     "question": "Each Azure subscription can contain multiple account administrators.",
     "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
     ]
   },
   {
     "question": "Each Azure subscription can be managed by using a Microsoft account only.",
     "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
     ]
   },
   {
