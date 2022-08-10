@@ -125,13 +125,7 @@
       { "text": "No", "result": true }
     ]
   },
-  {
-    "question": "A platform as a service (PaaS) solution that hosts\nweb apps in Azure provides full control of the\noperating systems that host applications.",
-    "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
-    ]
-  },
+
   {
     "question": "A Platform as a Service (PaaS) solution that hosts\nweb apps in Azure can be provided with additional\nmemory by changing the pricing tier.",
     "answers": [

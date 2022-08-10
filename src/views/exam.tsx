@@ -1,14 +1,14 @@
-import { Paper, styled, IconButton, Switch, FormControlLabel } from '@mui/material';
-import { ArrowCircleLeft, ArrowCircleRight, ChevronLeft, ChevronRight } from '@mui/icons-material';
+import { Paper, styled, IconButton, Switch, FormControlLabel, Modal } from '@mui/material';
+import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { Container } from '@mui/system';
 import { useState } from 'react';
-import { Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
 import { QuestionPrefix } from '../constant';
 import question from '../data/questions_1.json';
 import { Answered, Question } from '../types/type';
 import { useSearchParams } from 'react-router-dom';
+import AnsweredList from './AnsweredList';
 
 const correctColor = '#118E20';
 const incorrectColor = '#F15050';
@@ -20,6 +20,7 @@ const loadQuestion = (number: number) => {
 };
 
 export const Exam = () => {
+  const [openModal, setOpenModal] = useState(false);
   const [searchParams] = useSearchParams();
   const [current, setCurrent] = useState<number>(Number(searchParams.get('q') || 1) - 1);
   const [selected, setSelected] = useState<number>(-1);
@@ -30,6 +31,9 @@ export const Exam = () => {
   const [practice, setPractice] = useState<boolean>(false);
   const totalQuestion = question.length;
   const currentQuestion = loadQuestion(current);
+
+  const handleOpen = () => setOpenModal(true);
+  const handleClose = () => setOpenModal(false);
 
   const changeQuestion = (isNext: boolean) => {
     if (isNext && current + 1 === totalQuestion) {
@@ -66,24 +70,26 @@ export const Exam = () => {
             const updatedAnswer = [...selectedAnswers, index];
             setSelectedAnswers(updatedAnswer);
             if (updatedAnswer.length === currentQuestion.totalAnswer) {
+              const correctAnswer = currentQuestion.answers
+                .map((a, i) => {
+                  return a.result === true ? i : undefined;
+                })
+                .filter((n) => n !== undefined);
               setAnswered({
                 ...answered,
-                [current]: { selectedMultiple: updatedAnswer },
+                [current]: {
+                  selectedMultiple: updatedAnswer,
+                  isCorrect: JSON.stringify(correctAnswer) === JSON.stringify(updatedAnswer),
+                },
               });
 
               setDone(true);
-              setTimeout(() => changeQuestion(true), 500);
+              setTimeout(() => changeQuestion(true), 250);
             }
           }
         }
       } else {
         if (selected === -1) {
-          setAnswered({
-            ...answered,
-            [current]: {
-              selected: index,
-            },
-          });
           setSelected(index);
           setDone(true);
           if (result === true) {
@@ -91,8 +97,16 @@ export const Exam = () => {
           } else {
             setColor(incorrectColor);
           }
+
+          setAnswered({
+            ...answered,
+            [current]: {
+              selected: index,
+              isCorrect: result,
+            },
+          });
         }
-        setTimeout(() => changeQuestion(true), 500);
+        setTimeout(() => changeQuestion(true), 250);
       }
     }, 100);
   };
@@ -187,13 +201,23 @@ export const Exam = () => {
   return (
     <Container>
       <TopContainer>
-        <IconButton color="primary" aria-label="Previous" component="label">
-          <Button hidden onClick={() => changeQuestion(false)} disabled={current === 0} />
+        <IconButton
+          color="primary"
+          aria-label="Previous"
+          component="label"
+          onClick={() => changeQuestion(false)}
+          disabled={current === 0}
+        >
           <ChevronLeft style={{ width: 50, height: 50 }} />
         </IconButton>
-        <Heading>{`Question: ${current + 1}/${totalQuestion}`}</Heading>
-        <IconButton color="primary" aria-label="Next" component="label">
-          <Button hidden onClick={() => changeQuestion(true)} disabled={current + 1 === totalQuestion} />
+        <Heading>{`Question: ${current + 1}/${totalQuestion} `}</Heading>
+        <IconButton
+          color="primary"
+          aria-label="Next"
+          component="label"
+          onClick={() => changeQuestion(true)}
+          disabled={current + 1 === totalQuestion}
+        >
           <ChevronRight style={{ width: 50, height: 50 }} />
         </IconButton>
       </TopContainer>
@@ -207,6 +231,22 @@ export const Exam = () => {
         control={<StyledSwitch color="primary" checked={practice} onChange={() => setPractice(!practice)} />}
         label="Practice"
       />
+      <Label control={<StyledSwitch color="primary" checked={openModal} onChange={handleOpen} />} label="History" />
+      <Modal
+        open={openModal}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <AnsweredList
+          handleQuestionOnclick={(number) => {
+            setOpenModal(false);
+            setCurrent(number);
+          }}
+          totalQuestions={totalQuestion}
+          answered={answered}
+        />
+      </Modal>
     </Container>
   );
 };
@@ -217,26 +257,22 @@ const StyledPaper = styled(Paper)({
   marginLeft: 0,
   marginRight: 0,
 });
-
 const Label = styled(FormControlLabel)({
   marginTop: 20,
   color: selectedColor,
   whiteSpace: 'pre-line',
 });
-
 const StyledSwitch = styled(Switch)({
   '& .MuiSwitch-track': {
     backgroundColor: '#878787',
   },
 });
-
-const Text = styled(motion.div)({
+export const Text = styled(motion.div)({
   textAlign: 'left',
   fontSize: 20,
   color: selectedColor,
   whiteSpace: 'pre-line',
 });
-
 const QuestionText = styled(Text)({
   fontSize: 20,
 });
@@ -244,19 +280,16 @@ const AnswerContainer = styled('div')({
   marginTop: 20,
   paddingBottom: 50,
 });
-const Heading = styled(Text)({
+export const Heading = styled(Text)({
   fontWeight: 500,
 });
-
 const Answer = styled(Text)({
   cursor: 'default',
   fontSize: 20,
   marginTop: 10,
-
   borderRadius: 5,
   '&:hover': {},
 });
-
 const TopContainer = styled('div')({
   marginTop: 20,
   display: 'flex',

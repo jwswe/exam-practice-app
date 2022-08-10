@@ -14,5 +14,6 @@ export interface Answered {
   [key: number]: {
     selected?: number;
     selectedMultiple?: number[];
+    isCorrect?: boolean;
   };
 }
