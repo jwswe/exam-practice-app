@@ -9,12 +9,18 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 550,
+  width: '40%',
   bgcolor: 'rgb(0, 30, 60)',
   border: '1px solid #000',
   borderRadius: 2,
   boxShadow: 24,
   p: 4,
+  '@media only screen and (max-width: 900px)': {
+    width: '80%',
+  },
+  '@media only screen and (max-width: 600px)': {
+    width: '80%',
+  },
 };
 
 interface AnsweredListProps {
@@ -26,8 +32,8 @@ interface AnsweredListProps {
 const AnsweredList: React.FC<AnsweredListProps> = ({ totalQuestions, answered, handleQuestionOnclick }) => {
   const Circle = styled('div')({
     cursor: 'pointer',
-    height: '30px',
-    width: '30px',
+    height: '10px',
+    width: '10px',
     borderRadius: '50%',
     padding: 20,
     display: 'flex',
@@ -50,6 +56,10 @@ const AnsweredList: React.FC<AnsweredListProps> = ({ totalQuestions, answered, h
     '&:hover': {
       overflowY: 'overlay',
     },
+
+    '@media only screen and (max-width: 600px)': {
+      maxHeight: 400,
+    },
   });
 
   const AnswerList = useMemo(() => {
@@ -64,7 +74,7 @@ const AnsweredList: React.FC<AnsweredListProps> = ({ totalQuestions, answered, h
       }
 
       answers.push(
-        <Grid key={`answer-${i}`} paddingX={5} item xs={3} display="flex" direction="row" justifyContent="center">
+        <Grid key={`answer-${i}`} paddingLeft={2} item xs={3} display="flex" direction="row" justifyContent="center">
           <Circle onClick={() => handleQuestionOnclick(i)} style={{ background }}>
             {i + 1}
           </Circle>

@@ -261,6 +261,10 @@ const Label = styled(FormControlLabel)({
   marginTop: 20,
   color: selectedColor,
   whiteSpace: 'pre-line',
+  '@media only screen and (max-width: 600px)': {
+    marginTop: 10,
+    marginBottom: 10,
+  },
 });
 const StyledSwitch = styled(Switch)({
   '& .MuiSwitch-track': {
@@ -274,7 +278,7 @@ export const Text = styled(motion.div)({
   whiteSpace: 'pre-line',
 });
 const QuestionText = styled(Text)({
-  fontSize: 20,
+  fontSize: 18,
 });
 const AnswerContainer = styled('div')({
   marginTop: 20,
@@ -288,10 +292,11 @@ const Answer = styled(Text)({
   fontSize: 20,
   marginTop: 10,
   borderRadius: 5,
-  '&:hover': {},
+  '@media only screen and (max-width: 600px)': {
+    fontSize: 19,
+  },
 });
 const TopContainer = styled('div')({
-  marginTop: 20,
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',

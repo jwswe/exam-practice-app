@@ -11,4 +11,5 @@ body {
   background-color: rgb(3, 21, 39);
   height: 100%;
   margin: 0px;
+  -webkit-overflow-scrolling: touch;
 }
