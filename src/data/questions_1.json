@@ -619,12 +619,10 @@
     ]
   },
   {
-    "question": "2You are planning to migrate a company to Azure. Each of the company’s numerous divisions will have an administrator in place\nto manage the Azure resources used by their respective division.\nYou want to make sure that the Azure deployment you employ allows for Azure to be segmented for the divisions, while keeping\nadministrative effort to a minimum.\nSolution: You plan to make use of several Azure Active Directory (Azure AD) directories.\nDoes the solution meet the goal?",
+    "question": "You are planning to migrate a company to Azure. Each of the company’s numerous divisions will have an administrator in place\nto manage the Azure resources used by their respective division.\nYou want to make sure that the Azure deployment you employ allows for Azure to be segmented for the divisions, while keeping\nadministrative effort to a minimum.\nSolution: You plan to make use of several Azure Active Directory (Azure AD) directories.\nDoes the solution meet the goal?",
     "answers": [
-      { "text": "Standard", "result": true },
-      { "text": "Basic", "result": false },
-      { "text": "Free", "result": false },
-      { "text": "Shared", "result": false }
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
     ]
   },
   {
