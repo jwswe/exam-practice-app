@@ -119,7 +119,7 @@
     ]
   },
   {
-    "question": "A private cloud must be disconnected from the intemet.",
+    "question": "A private cloud must be disconnected from the internet.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
@@ -274,13 +274,6 @@
     ]
   },
   {
-    "question": "A private cloud must be disconnected from the internet.",
-    "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
-    ]
-  },
-  {
     "question": "Part of a hybrid cloud is the public cloud.",
     "answers": [
       { "text": "Yes", "result": true },
@@ -296,13 +289,6 @@
   },
   {
     "question": "If you delete a resource group, all the resources in the resource group will be deleted.",
-    "answers": [
-      { "text": "Yes", "result": true },
-      { "text": "No", "result": false }
-    ]
-  },
-  {
-    "question": "A resource group can contain resources from multiple Azure regions.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
@@ -386,13 +372,6 @@
     ]
   },
   {
-    "question": "Availability zones are used to replicate data and applications\nto multiple regions.",
-    "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
-    ]
-  },
-  {
     "question": "All the Azure resources deployed to a\nresource group must use the same\nAzure region.",
     "answers": [
       { "text": "Yes", "result": false },
@@ -436,13 +415,6 @@
   },
   {
     "question": "If you have Azure resources deployed to every region, you can implement availability zones\nin all the regions.",
-    "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
-    ]
-  },
-  {
-    "question": "Only virtual machines that run Windows Server can be created in availability zones.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
@@ -521,22 +493,8 @@
   {
     "question": "An Azure subscription can have multiple account administrators",
     "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
-    ]
-  },
-  {
-    "question": "An Azure subscription can be managed by using a Microsoft\naccount only",
-    "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
-    ]
-  },
-  {
-    "question": "An Azure resource group can contain multiple Azure subscriptions",
-    "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
     ]
   },
   {
@@ -652,10 +610,21 @@
     ]
   },
   {
-    "question": "Your developers have created 10 web applications that must be host on Azure.\nYou need to determine which Azure web tier plan to host the web apps. The web tier plan must meet the following\nrequirements:\nThe web apps will use custom domains.\nThe web apps each require 10 GB of storage.\nThe web apps must each run in dedicated compute instances.\nLoad balancing between instances must be included.\nCosts must be minimized.\nWhich web tier plan should you use? 2You are planning to migrate a company to Azure. Each of the company’s numerous divisions will have an administrator in place\nto manage the Azure resources used by their respective division.\nYou want to make sure that the Azure deployment you employ allows for Azure to be segmented for the divisions, while keeping\nadministrative effort to a minimum.\nSolution: You plan to make use of several Azure Active Directory (Azure AD) directories.\nDoes the solution meet the goal?",
+    "question": "Your developers have created 10 web applications that must be host on Azure.\nYou need to determine which Azure web tier plan to host the web apps. The web tier plan must meet the following\nrequirements:\nThe web apps will use custom domains.\nThe web apps each require 10 GB of storage.\nThe web apps must each run in dedicated compute instances.\nLoad balancing between instances must be included.\nCosts must be minimized.\nWhich web tier plan should you use?",
     "answers": [
-      { "text": "Yes", "result": false },
-      { "text": "No", "result": true }
+      { "text": "Standard", "result": true },
+      { "text": "Basic", "result": false },
+      { "text": "Free", "result": false },
+      { "text": "Shared", "result": false }
+    ]
+  },
+  {
+    "question": "2You are planning to migrate a company to Azure. Each of the company’s numerous divisions will have an administrator in place\nto manage the Azure resources used by their respective division.\nYou want to make sure that the Azure deployment you employ allows for Azure to be segmented for the divisions, while keeping\nadministrative effort to a minimum.\nSolution: You plan to make use of several Azure Active Directory (Azure AD) directories.\nDoes the solution meet the goal?",
+    "answers": [
+      { "text": "Standard", "result": true },
+      { "text": "Basic", "result": false },
+      { "text": "Free", "result": false },
+      { "text": "Shared", "result": false }
     ]
   },
   {
