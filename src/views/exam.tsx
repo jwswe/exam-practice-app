@@ -64,7 +64,7 @@ export const Exam = () => {
 
       if (currentQuestion.isMultiple) {
         if (!done) {
-          if (selectedAnswers === []) {
+          if (selectedAnswers.length === 0) {
             setSelectedAnswers([index]);
           } else {
             const updatedAnswer = [...selectedAnswers, index];
@@ -222,7 +222,7 @@ export const Exam = () => {
         </IconButton>
       </TopContainer>
       <StyledPaper>
-        <QuestionText key={currentQuestion.question} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }}>
+        <QuestionText key={currentQuestion.question} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           {currentQuestion.question}
         </QuestionText>
         <AllAnswers />
