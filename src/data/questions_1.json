@@ -775,8 +775,8 @@
   {
     "question": "Your company’s Active Directory forest includes thousands of user accounts.\nYou have been informed that all network resources will be migrated to Azure. Thereafter, the on-premises data center will be\nretired.\nYou are required to employ a strategy that reduces the effect on users, once the planned migration has been completed.\nSolution: You plan to require Azure Multi-Factor Authentication (MFA).\nDoes the solution meet the goal?",
     "answers": [
-      { "text": "Yes", "result": true },
-      { "text": "No", "result": false }
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
     ]
   },
   {
@@ -789,8 +789,8 @@
   {
     "question": "Your company plans to migrate all its data and resources to Azure.\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed.\nDoes this meet the goal?",
     "answers": [
-      { "text": "Yes", "result": true },
-      { "text": "No", "result": false }
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
     ]
   },
   {
@@ -1146,9 +1146,9 @@
     "question": "To what should an application connect to retrieve security tokens?",
     "answers": [
       { "text": "an Azure Storage account", "result": false },
-      { "text": "Azure Active Directory (Azure AD)", "result": false },
+      { "text": "Azure Active Directory (Azure AD)", "result": true },
       { "text": "a certificate store", "result": false },
-      { "text": "an Azure key vault", "result": true }
+      { "text": "an Azure key vault", "result": false }
     ]
   },
   {
@@ -1227,8 +1227,8 @@
     "question": "Which task can you perform by using Azure Advisor?",
     "answers": [
       { "text": "Integrate Active Directory and Azure Active Directory (Azure AD).", "result": false },
-      { "text": "Estimate the costs of an Azure solution.", "result": true },
-      { "text": "Confirm that Azure subscription security follows best practices.", "result": false },
+      { "text": "Estimate the costs of an Azure solution.", "result": false },
+      { "text": "Confirm that Azure subscription security follows best practices.", "result": true },
       { "text": "Evaluate which on-premises resources can be migrated to Azure.", "result": false }
     ]
   },

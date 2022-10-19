@@ -84,7 +84,7 @@ export const Exam = () => {
               });
 
               setDone(true);
-              setTimeout(() => changeQuestion(true), 250);
+              setTimeout(() => changeQuestion(true), 600);
             }
           }
         }
@@ -106,7 +106,7 @@ export const Exam = () => {
             },
           });
         }
-        setTimeout(() => changeQuestion(true), 250);
+        setTimeout(() => changeQuestion(true), 600);
       }
     }, 100);
   };
