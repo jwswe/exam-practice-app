@@ -609,6 +609,869 @@
       { "text": "No", "result": false }
     ]
   },
+
+  {
+    "question": "Azure Advisor can generate a list of Azure virtual machines that are protected by Azure Backup@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "If you irnplement the security recommendations provided by ,Azure Advisor, your company's secure score will decrease.@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "To maintain Microsoft support, you must implement the security recommendations provided by Azure Advisor Wlthtn a period of 30 days.@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Advisor provides recommendations on how to improve the security of an Azure Active Directory (Azure AD) environment.@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Advisor provides recommendations on how to reduce the cost of running Azure virtual machines.!",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Advisor provides recommendations on how to configure the network settings on Azure virtual machines.@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can associate a network security group (NSG) to a virtual network subnet.!",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can associate a network security group (NSG) to a virtual network.@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can associate a network security group (NSG) to a network interface.!",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can use Azure Cost Management to view costs associated to management groups.@",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can use Azure Cost Management to view costs associated to resource groups.!",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can use Azure Cost Management to view the usage of virtual machines during the last three months.!",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Sentinel stores collected events in an Azure Storage account. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Sentinel can remediate incidents automatically. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Sentinel can collect Windows Defender Firewall logs from Azure virtual machines. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can create custom Azure roles to control access to resources. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A user account can be assigned to multiple Azure roles. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "A resource group can have the Owner role assigned to multiple users. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure China is operated by Microsoft. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Government is operated by Microsoft. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Government is available only to US government agencies and their partners. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure resource can have multiple Delete locks. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure resource inherits locks from its resource group. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "If an Azure resource has a Read-only lock, you can add a Delete lock to the resource. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can create Group Polices in Azure Active Directory (Azure AD). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can join Windows 10 devices to Azure Active Drectory (Azure AD). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can join Android devices to Azure Active Directory (Azure AD).  ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Authorization to access Azure resources can be provided only to Azure Active Directory (Azure AD) users. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Identities stored in Azure Active Directory (Azure AD), third-party cloud services, and on-premises Active Directory can be used to access Azure resources. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure has built-in authentication and authorization services that provide secure access to Azure resources. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "General Data Protection Regulation (GDPR) defines data protection and privacy rules. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "General Data Protection Regulation (GDPR) applies to companies that offer goods or services to individuals in the EU. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure can be used to build a General Data Protection Regulation (GDPR)-compliant infrastructure. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Firewall will encrypt all the network traffc sent from Azure to O the Internet. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A network security group (NSG) will encrypt all the network traffic sent from Azure to the Internet ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure virtual machines that run Windows Server 2016 can encrypt network tramc sent to the Internet.",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Security Center can monitor Azure resources and on-premises resources. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "All Azure Security Center features are free. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "From Azure Security Center, you can download a Regulatory Compliance report. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can add an Azure Resource Manager template to an Azure blueprint. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can assign an Azure blueprint to a resource group. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can use Azure Blueprints to grant permissions to a resource. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Identities stored in an on-premises Active Directory can be synchronized to Azure Active Directory (Azure AD). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Identities stored in Azure Active Directory (Azure AD), third-party cloud services, and on-premises Active Directory can be used to access Azure resources. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure has built-in authentication and authorization services that provide secure access to Azure resources. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) requires the implementation of domain controllers on Azure virtual machines. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) provldes authentication semces for resources hosted in Azure and Microsoft 365. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Each user account in Azure Active Directory (Azure AD) can be assigned only one license. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) can be used to manage access to on-premises applications. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) provides single sign-on (SSO). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "iOS devices can be registered in Azure Active Directory (Azure AD). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Trust Center is part of the Azure Security Center ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Trust Center can only be accessed by users that have an Azure subscription ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Trust Center provides information about the Azure compliance offerings ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can use Azure policy to apply tags to resources ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can add multiple tags to the same Azure resource ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure resource inherits tags from the resource group to which the resource is deployed ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "All Azure services in private preview must be accessed by using a separate Azure portal. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure services in public preview can be used in production environments. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure setvices in public preview are subject to a Service Level Agreement (SLA). ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Standard support plan is included in an Azure free account. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A Premier support plan can only be purchased by companies that have an Enterprise Agreement (EA). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Support from MSDN forums is only provided to companies that have a pay-as-you-go subscription. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A user who is assigned the Owner role can transfer ownership of an Azure subscription. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "You can convert the Azure subscription of your company from Free Trial to Pay-As-You-Go. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The Azure spending limit is fixed and cannot be increased or decreased. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can configure the Azure Active Directory (Azure AD) activity logs to appear in Azure Monitor. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "From Azure Monitor, you can monitor resources across multiple Azure subscriptions. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "From Azure Monitor, you can create alerts. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The Microsoft Service Trust Portal can be accessed by using a Microsoft cloud services account ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Compliance Manager can be used to track your company's regulatory compliance activities related to Microsoft cloud services. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The My Library feature can be used to save Microsoft Service Trust Portal documents and resources in a single location. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "With Azure Reservations, you pay less for virtual machines than with pay-as-you-go pricing. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Two Azure virtual machines that use the B2S size have the same monthly costs. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "When an Azure virtual machine is stopped, you continue to pay storage costs for the virtual machine. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "By creating additional resource groups in anAzure subscription, additional O costs are incurred ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "By copying several gigabits of data to Azure from an on-premises network O over a VPN, additional data transfer costs are incurred.  ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "By copying several GB of data from Azure to an on-premises network over a VPN, additional data transfer costs are incurred. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Most Azure services are introduced in private preview before being introduced in public preview, and then in general availability. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Azure services in public preview can be managed only by using the Azure CLI. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "The cost of an Azure service in private preview decreases when the service becomes generally available. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "To implement an Azure Multi-Factor Authentication (MFA) solution, you must sync on-premises identities to the cloud. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Two valid methods for Azure Multi-Factor Authentication (MFA) are picture identification and a passport number. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure Multi-Factor Authentication (MFA) can be required for administrative and non-administrative user accounts. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "With a consumption-based plan, you pay a fixed rate for all data sent to or from virtual machines hosted in the cloud. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "With a consumption-based plan, you reduce overall costs by paying only for extra capacity when it is required. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Serverless computing is an example of a consumption-based plan. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "The cost of Azure resources can vary between regions. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure reservation is used to reserve server capacity at a specific data center. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can stop an Azure SQL Database instance to decrease costs. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "The Service Level Agreement (SLA) guaranteed uptime for paid Azure services is at least 99.9 percent. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Companies can increase the Service Level Agreement (SLA) guaranteed uptime by adding Azure resources to multiple regions. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Companies can increase the Service Level Agreement (SLA) guaranteed uptime by purchasing multiple subscriptions. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure free account has a spending limit ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure free account has a limit of 2TB of data that can be uploaded to Azure. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure free account can contain an unlimited number of web apps. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "When using an Azure ExpressRoute connection, inbound data traffic from an on-premises network to Azure is always free. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Outbound data traffic from Azure to an on-premises network is always free. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Data traffc between Azure services within the same Azure region is always free ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Storing 1 TB Of data in Azure Blob storage will always COSt the same, regardless of the Azure region in which the data is located. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "When you use a general-purpose v2 Azure Storage account. you are only charged for the amount of data that is stored. All read and write operations are free. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Transferring data between Azure Storage accounts in different Azure regions is free",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "In Azure Active Premium P2. at least 999 percent availability is guaranteed. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "Service Level Agreernent SLA) for Azure Active Directory Prerniurn P2 is same as SLA for Azure Active Free. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "All Azure custorners receive a credit if their monthly uptirne percentage is below guaranteed amount in Servke Level Agreement (SLA). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "If your company uses an Azure free account, you will only be able to use a subset of Azure services. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "All Azure free accounts expire after a specific period. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "You can create up to 10 Azure free accounts by using the same Microsoft account. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Azure provides flexibility between capital expenditure (CapEx) and operational exponditure (OpEx). ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "If you create two Azure virtual machines that use the B2S size, each virtual machine will always generate the same monthly costs. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "When an Azure virtual machine is stopped, you continue to pay storage costs associated to the virtual machine. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "To achieve a hybrid cloud model, a company must always migrate from a cloud ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "A company can extend the capacity of its intemal network by using the public cloud. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "In a public cloud model, only guest users at your company can access the resources in the cloud. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure service in private preview is released to all Azure customers. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "An Azure service in public preview is released to all Azure customers. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "An Azure service in general availability is released to a subset of Azure customers. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Adding resource groups in an Azure subscription generates additional costs. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Copying 10 GB of data to Azure from an on-premises network over a VPN generates additional Azure data transfer costs. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "Copying 10 GB of data from Azure to an on-premises network over a VPN generates additional Azure data transfer costs. ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "From the Azure portal, you can distinguish between services that are generally available and services that are in public preview ",
+    "answers": [
+      { "text": "Yes", "result": true },
+      { "text": "No", "result": false }
+    ]
+  },
+  {
+    "question": "After an Azure service becomes generally available, the service is no longer updated with new features. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+  {
+    "question": "When you create Azure resources for a service in public preview, you must recreate the resources once the service becomes generally available. ",
+    "answers": [
+      { "text": "Yes", "result": false },
+      { "text": "No", "result": true }
+    ]
+  },
+
   {
     "question": "Your developers have created 10 web applications that must be host on Azure.\nYou need to determine which Azure web tier plan to host the web apps. The web tier plan must meet the following\nrequirements:\nThe web apps will use custom domains.\nThe web apps each require 10 GB of storage.\nThe web apps must each run in dedicated compute instances.\nLoad balancing between instances must be included.\nCosts must be minimized.\nWhich web tier plan should you use?",
     "answers": [
