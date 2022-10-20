@@ -71,9 +71,7 @@ export const Exam = () => {
             setSelectedAnswers(updatedAnswer);
             if (updatedAnswer.length === currentQuestion.totalAnswer) {
               const correctAnswer = currentQuestion.answers
-                .map((a, i) => {
-                  return a.result === true ? i : undefined;
-                })
+                .map((a, i) => (a.result === true ? i : undefined))
                 .filter((n) => n !== undefined);
               setAnswered({
                 ...answered,
@@ -84,7 +82,7 @@ export const Exam = () => {
               });
 
               setDone(true);
-              setTimeout(() => changeQuestion(true), 600);
+              setTimeout(() => changeQuestion(true), 450);
             }
           }
         }
@@ -106,7 +104,7 @@ export const Exam = () => {
             },
           });
         }
-        setTimeout(() => changeQuestion(true), 600);
+        setTimeout(() => changeQuestion(true), 450);
       }
     }, 100);
   };
