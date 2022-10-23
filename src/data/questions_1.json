@@ -611,84 +611,84 @@
   },
 
   {
-    "question": "Azure Advisor can generate a list of Azure virtual machines that are protected by Azure Backup@",
+    "question": "Azure Advisor can generate a list of Azure virtual machines that are protected by Azure Backup",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "If you irnplement the security recommendations provided by ,Azure Advisor, your company's secure score will decrease.@",
+    "question": "If you irnplement the security recommendations provided by ,Azure Advisor, your company's secure score will decrease.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "To maintain Microsoft support, you must implement the security recommendations provided by Azure Advisor Wlthtn a period of 30 days.@",
+    "question": "To maintain Microsoft support, you must implement the security recommendations provided by Azure Advisor Wlthtn a period of 30 days.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "Azure Advisor provides recommendations on how to improve the security of an Azure Active Directory (Azure AD) environment.@",
+    "question": "Azure Advisor provides recommendations on how to improve the security of an Azure Active Directory (Azure AD) environment.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "Azure Advisor provides recommendations on how to reduce the cost of running Azure virtual machines.!",
+    "question": "Azure Advisor provides recommendations on how to reduce the cost of running Azure virtual machines.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
     ]
   },
   {
-    "question": "Azure Advisor provides recommendations on how to configure the network settings on Azure virtual machines.@",
+    "question": "Azure Advisor provides recommendations on how to configure the network settings on Azure virtual machines.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "You can associate a network security group (NSG) to a virtual network subnet.!",
+    "question": "You can associate a network security group (NSG) to a virtual network subnet.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
     ]
   },
   {
-    "question": "You can associate a network security group (NSG) to a virtual network.@",
+    "question": "You can associate a network security group (NSG) to a virtual network.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "You can associate a network security group (NSG) to a network interface.!",
+    "question": "You can associate a network security group (NSG) to a network interface.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
     ]
   },
   {
-    "question": "You can use Azure Cost Management to view costs associated to management groups.@",
+    "question": "You can use Azure Cost Management to view costs associated to management groups.",
     "answers": [
       { "text": "Yes", "result": false },
       { "text": "No", "result": true }
     ]
   },
   {
-    "question": "You can use Azure Cost Management to view costs associated to resource groups.!",
+    "question": "You can use Azure Cost Management to view costs associated to resource groups.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
     ]
   },
   {
-    "question": "You can use Azure Cost Management to view the usage of virtual machines during the last three months.!",
+    "question": "You can use Azure Cost Management to view the usage of virtual machines during the last three months.",
     "answers": [
       { "text": "Yes", "result": true },
       { "text": "No", "result": false }
