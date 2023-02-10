@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 import { QuestionPrefix } from '../constant';
 import question from '../data/questions_1.json';
-import { Answered, Question } from '../types/type';
+import { Answered, AnsweredChild, Question } from '../types/type';
 import { useSearchParams } from 'react-router-dom';
 import AnsweredList from './AnsweredList';
 
@@ -15,9 +15,20 @@ const incorrectColor = '#F15050';
 const selectedColor = '#D9D9D9';
 const bold = '600';
 
-const loadQuestion = (number: number) => {
-  return (question as Question[])[number];
-};
+const loadQuestion = (number: number) => (question as Question[])[number];
+
+/**
+ * 1 normal
+ * 2 practice
+ * 3 revision
+ * @returns
+ */
+
+enum Mode {
+  Normal = 1,
+  Practice = 2,
+  Revision = 3,
+}
 
 export const Exam = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -28,12 +39,27 @@ export const Exam = () => {
   const [color, setColor] = useState(selectedColor);
   const [done, setDone] = useState(false);
   const [answered, setAnswered] = useState<Answered>({});
-  const [practice, setPractice] = useState<boolean>(false);
+  const [mode, setMode] = useState<Mode>(-1);
   const totalQuestion = question.length;
   const currentQuestion = loadQuestion(current);
 
   const handleOpen = () => setOpenModal(true);
   const handleClose = () => setOpenModal(false);
+  const handleRevision = () => {
+    if (mode === Mode.Revision) {
+      setMode(Mode.Normal);
+    } else {
+      const fa = Object.entries(answered).find(([_, v]) => !v.isCorrect);
+
+      const firstWrongAnswer = fa ? fa[0] : undefined;
+
+      if (JSON.stringify(answered) === '{}' || !firstWrongAnswer) {
+        console.log('no wrong answer or not answered yet');
+        return;
+      }
+      setMode(Mode.Revision);
+    }
+  };
 
   const changeQuestion = (isNext: boolean) => {
     if (isNext && current + 1 === totalQuestion) {
@@ -55,10 +81,8 @@ export const Exam = () => {
   };
 
   const handleClickAnswer = (index: number, result: boolean) => {
-    //#TODO handle multiple answer
-
     setTimeout(() => {
-      if (practice || answered[current]) {
+      if (mode === Mode.Practice || answered[current]) {
         return;
       }
 
@@ -130,7 +154,7 @@ export const Exam = () => {
             });
           }
 
-          if (practice && a.result === true) {
+          if (mode === Mode.Practice && a.result === true) {
             displayColor = correctColor;
             fontWeight = bold;
           }
@@ -156,7 +180,7 @@ export const Exam = () => {
             });
           }
         } else {
-          if (practice && a.result === true) {
+          if (mode === Mode.Practice && a.result === true) {
             displayColor = correctColor;
             fontWeight = bold;
           }
@@ -226,10 +250,14 @@ export const Exam = () => {
         <AllAnswers />
       </StyledPaper>
       <Label
-        control={<StyledSwitch color="primary" checked={practice} onChange={() => setPractice(!practice)} />}
+        control={<StyledSwitch color="primary" checked={mode === Mode.Practice} onChange={() => setMode(Mode.Practice)} />}
         label="Practice"
       />
       <Label control={<StyledSwitch color="primary" checked={openModal} onChange={handleOpen} />} label="History" />
+      <Label
+        control={<StyledSwitch color="primary" checked={mode === Mode.Revision} onChange={handleRevision} />}
+        label="錯誤集"
+      />
       <Modal
         open={openModal}
         onClose={handleClose}

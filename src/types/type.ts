@@ -10,10 +10,12 @@ export interface Answer {
   result: boolean;
 }
 
+export interface AnsweredChild {
+  selected?: number;
+  selectedMultiple?: number[];
+  isCorrect?: boolean;
+}
+
 export interface Answered {
-  [key: number]: {
-    selected?: number;
-    selectedMultiple?: number[];
-    isCorrect?: boolean;
-  };
+  [key: number]: AnsweredChild;
 }
