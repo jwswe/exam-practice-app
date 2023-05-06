@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Answer, Question } from '../types/type';
+import { Answer, Question } from '../../types/type';
 
 export const Importer = () => {
   const [lines, setLines] = useState<number>(0);

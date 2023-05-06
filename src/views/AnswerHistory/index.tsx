@@ -1,8 +1,9 @@
 import { Box, List, styled } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import React, { useMemo } from 'react';
-import { Answered } from '../types/type';
-import { Heading } from './exam';
+import { Answered } from '../../types/type';
+import { Heading } from '../Exam';
+import { STYLE } from '../../constant';
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -10,7 +11,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '40%',
-  bgcolor: 'rgb(0, 30, 60)',
+  bgcolor: STYLE.SECOND_BACKGROUND_COLOR,
   border: '1px solid #000',
   borderRadius: 2,
   boxShadow: 24,
@@ -65,12 +66,12 @@ const AnsweredList: React.FC<AnsweredListProps> = ({ totalQuestions, answered, h
   const AnswerList = useMemo(() => {
     const answers = [];
     for (let i = 0; i < totalQuestions; i++) {
-      let background = '#bbb';
+      let background = STYLE.CIRCLE_NORMAL_COLOR;
 
       if (answered[i]) {
         const isCorrect = answered[i].isCorrect;
-        if (isCorrect === true) background = '#307F41';
-        if (isCorrect === false) background = '#DE4A4A';
+        if (isCorrect === true) background = STYLE.FONT_CORRECT_COLOR;
+        if (isCorrect === false) background = STYLE.FONT_INCORRECT_COLOR;
       }
 
       answers.push(
@@ -90,7 +91,7 @@ const AnsweredList: React.FC<AnsweredListProps> = ({ totalQuestions, answered, h
 
   return (
     <Box sx={style}>
-      <Heading>Answer History</Heading>
+      <Heading>答题历史</Heading>
 
       <ListContainer>{AnswerList}</ListContainer>
     </Box>

@@ -1,21 +1,17 @@
-import { Paper, styled, IconButton, Switch, FormControlLabel, Modal } from '@mui/material';
+import { Paper, styled, IconButton, Switch, FormControlLabel, Modal, Select, MenuItem } from '@mui/material';
 import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { Container } from '@mui/system';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-import { QuestionPrefix } from '../constant';
-import question from '../data/questions_1.json';
-import { Answered, AnsweredChild, Question } from '../types/type';
+import { Mode, QuestionPrefix, STYLE } from '../../constant';
+import az900 from '../../data/questions_1.json';
+import az204 from '../../data/questions_2.json';
+
+import { Answer, Answered, Question } from '../../types/type';
 import { useSearchParams } from 'react-router-dom';
-import AnsweredList from './AnsweredList';
-
-const correctColor = '#118E20';
-const incorrectColor = '#F15050';
-const selectedColor = '#D9D9D9';
-const bold = '600';
-
-const loadQuestion = (number: number) => (question as Question[])[number];
+import AnsweredList from '../AnswerHistory';
+import { styleAnswer } from './utils';
 
 /**
  * 1 normal
@@ -24,24 +20,26 @@ const loadQuestion = (number: number) => (question as Question[])[number];
  * @returns
  */
 
-enum Mode {
-  Normal = 1,
-  Practice = 2,
-  Revision = 3,
-}
-
 export const Exam = () => {
+  const [certificate, setCertificate] = useState<number>(1);
   const [openModal, setOpenModal] = useState(false);
   const [searchParams] = useSearchParams();
-  const [current, setCurrent] = useState<number>(Number(searchParams.get('q') || 1) - 1);
+  const [currentQuestionIndex, setCurrentCurrentQuestionIndex] = useState<number>(Number(searchParams.get('q') || 1) - 1);
   const [selected, setSelected] = useState<number>(-1);
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
-  const [color, setColor] = useState(selectedColor);
+  const [color, setColor] = useState(STYLE.FONT_COLOR_NORMAL);
   const [done, setDone] = useState(false);
   const [answered, setAnswered] = useState<Answered>({});
-  const [mode, setMode] = useState<Mode>(-1);
-  const totalQuestion = question.length;
-  const currentQuestion = loadQuestion(current);
+  const [mode, setMode] = useState<Mode>(1);
+
+  const certs = {
+    1: az204,
+    2: az900,
+  };
+
+  const loadQuestion = (number: number) => (certs[certificate as keyof typeof certs] as Question[])[number];
+  const totalQuestion = certs[certificate as keyof typeof certs].length;
+  const currentQuestion = loadQuestion(currentQuestionIndex);
 
   const handleOpen = () => setOpenModal(true);
   const handleClose = () => setOpenModal(false);
@@ -62,27 +60,27 @@ export const Exam = () => {
   };
 
   const changeQuestion = (isNext: boolean) => {
-    if (isNext && current + 1 === totalQuestion) {
+    if (isNext && currentQuestionIndex + 1 === totalQuestion) {
       return;
     }
 
     setDone(false);
     setSelected(-1);
     setSelectedAnswers([]);
-    setColor(selectedColor);
+    setColor(STYLE.FONT_SELECTED_COLOR);
 
-    if (!isNext && current !== 0) {
-      setCurrent(current - 1);
+    if (!isNext && currentQuestionIndex !== 0) {
+      setCurrentCurrentQuestionIndex(currentQuestionIndex - 1);
     }
 
     if (isNext) {
-      setCurrent(current + 1);
+      setCurrentCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   };
 
   const handleClickAnswer = (index: number, result: boolean) => {
     setTimeout(() => {
-      if (mode === Mode.Practice || answered[current]) {
+      if (mode === Mode.Practice || answered[currentQuestionIndex]) {
         return;
       }
 
@@ -99,7 +97,7 @@ export const Exam = () => {
                 .filter((n) => n !== undefined);
               setAnswered({
                 ...answered,
-                [current]: {
+                [currentQuestionIndex]: {
                   selectedMultiple: updatedAnswer,
                   isCorrect: JSON.stringify(correctAnswer) === JSON.stringify(updatedAnswer),
                 },
@@ -115,14 +113,14 @@ export const Exam = () => {
           setSelected(index);
           setDone(true);
           if (result === true) {
-            setColor(correctColor);
+            setColor(STYLE.FONT_CORRECT_COLOR);
           } else {
-            setColor(incorrectColor);
+            setColor(STYLE.FONT_INCORRECT_COLOR);
           }
 
           setAnswered({
             ...answered,
-            [current]: {
+            [currentQuestionIndex]: {
               selected: index,
               isCorrect: result,
             },
@@ -130,91 +128,33 @@ export const Exam = () => {
         }
         setTimeout(() => changeQuestion(true), 450);
       }
-    }, 100);
+    }, 50);
   };
 
   const AllAnswers: React.FC = () => (
     <AnswerContainer>
-      {currentQuestion.answers.map((a, i) => {
-        let displayColor = selectedColor;
-        let fontWeight = 'normal';
-
-        if (currentQuestion.isMultiple) {
-          if (answered[current]) {
-            (answered[current]?.selectedMultiple || []).forEach((s) => {
-              if (i === s) {
-                if (a.result === false) {
-                  displayColor = incorrectColor;
-                }
-              }
-              if (a.result === true) {
-                displayColor = correctColor;
-              }
-              fontWeight = bold;
-            });
-          }
-
-          if (mode === Mode.Practice && a.result === true) {
-            displayColor = correctColor;
-            fontWeight = bold;
-          }
-
-          if (selectedAnswers.length) {
-            selectedAnswers.forEach((s) => {
-              if (i === s) {
-                if (done) {
-                  if (a.result === false) {
-                    displayColor = incorrectColor;
-                  }
-                } else {
-                  displayColor = selectedColor;
-                }
-                fontWeight = bold;
-              }
-
-              if (done) {
-                if (a.result === true) {
-                  displayColor = correctColor;
-                }
-              }
-            });
-          }
-        } else {
-          if (mode === Mode.Practice && a.result === true) {
-            displayColor = correctColor;
-            fontWeight = bold;
-          }
-
-          if (answered[current] && answered[current].selected === i) {
-            if (a.result === true) {
-              displayColor = correctColor;
-            } else {
-              displayColor = incorrectColor;
-            }
-            fontWeight = bold;
-          }
-
-          if (i === selected && done === true) {
-            displayColor = color;
-            fontWeight = bold;
-          }
-          if (selected !== -1 && a.result === true && done === true) {
-            displayColor = correctColor;
-            fontWeight = bold;
-          }
-        }
+      {currentQuestion.answers.map((answer, currentAnswerIndex) => {
+        const { fontColor, fontWeight, isSelected } = styleAnswer(
+          answer,
+          currentQuestion,
+          answered,
+          done,
+          mode,
+          color,
+          selected,
+          selectedAnswers,
+          currentQuestionIndex,
+          currentAnswerIndex
+        );
 
         return (
-          <Answer
-            key={`answer-${i}`}
-            style={{
-              color: displayColor,
-              fontWeight,
-            }}
-            onClick={() => (fontWeight === bold ? null : handleClickAnswer(i, a.result))}
+          <AnswerText
+            key={`answer-${currentAnswerIndex}`}
+            style={{ color: fontColor, fontWeight }}
+            onClick={() => (isSelected ? null : handleClickAnswer(currentAnswerIndex, answer.result))}
           >
-            {`${QuestionPrefix[i + 1]}. ${a.text}`}
-          </Answer>
+            {`${QuestionPrefix[currentAnswerIndex + 1]}. ${answer.text}`}
+          </AnswerText>
         );
       })}
     </AnswerContainer>
@@ -222,41 +162,71 @@ export const Exam = () => {
 
   return (
     <Container>
+      <Select
+        variant="outlined"
+        sx={{
+          width: 100,
+          height: 40,
+          marginRight: 15,
+          color: STYLE.FONT_COLOR_NORMAL,
+          '& .MuiSvgIcon-root': {
+            color: 'white',
+          },
+        }}
+        value={certificate}
+        label="Certificate"
+        onChange={(e) => setCertificate(Number(e.target.value))}
+      >
+        <MenuItem value={1}>AZ204</MenuItem>
+        <MenuItem value={2}>AZ900</MenuItem>
+      </Select>
       <TopContainer>
         <IconButton
-          color="primary"
           aria-label="Previous"
           component="label"
           onClick={() => changeQuestion(false)}
-          disabled={current === 0}
+          disabled={currentQuestionIndex === 0}
+          style={{ color: STYLE.FONT_CORRECT_COLOR }}
         >
           <ChevronLeft style={{ width: 50, height: 50 }} />
         </IconButton>
-        <Heading>{`Question: ${current + 1}/${totalQuestion} `}</Heading>
+        <Heading>
+          <span style={{ color: STYLE.FONT_CORRECT_COLOR, fontWeight: STYLE.FONT_WEIGHT_BOLD }}>{`${
+            currentQuestionIndex + 1
+          }`}</span>
+          {`/${totalQuestion} `}
+        </Heading>
         <IconButton
-          color="primary"
           aria-label="Next"
           component="label"
           onClick={() => changeQuestion(true)}
-          disabled={current + 1 === totalQuestion}
+          disabled={currentQuestionIndex + 1 === totalQuestion}
+          style={{ color: STYLE.FONT_CORRECT_COLOR }}
         >
           <ChevronRight style={{ width: 50, height: 50 }} />
         </IconButton>
       </TopContainer>
-      <StyledPaper>
-        <QuestionText key={currentQuestion.question} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          {currentQuestion.question}
-        </QuestionText>
-        <AllAnswers />
-      </StyledPaper>
+      <QuestionText key={currentQuestion.question} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <span style={{ color: STYLE.FONT_CORRECT_COLOR }}>
+          ({currentQuestion.isMultiple ? '多' : '單'}选题)
+        </span>
+        Q{currentQuestionIndex + 1}. {currentQuestion.question}
+      </QuestionText>
+      <AllAnswers />
       <Label
-        control={<StyledSwitch color="primary" checked={mode === Mode.Practice} onChange={() => setMode(Mode.Practice)} />}
-        label="Practice"
+        control={
+          <StyledSwitch
+            color="primary"
+            checked={mode === Mode.Practice}
+            onChange={() => setMode(mode === Mode.Practice ? Mode.Normal : Mode.Practice)}
+          />
+        }
+        label="练习"
       />
-      <Label control={<StyledSwitch color="primary" checked={openModal} onChange={handleOpen} />} label="History" />
+      <Label control={<StyledSwitch color="primary" checked={openModal} onChange={handleOpen} />} label="答题历史" />
       <Label
         control={<StyledSwitch color="primary" checked={mode === Mode.Revision} onChange={handleRevision} />}
-        label="錯誤集"
+        label="错题集"
       />
       <Modal
         open={openModal}
@@ -267,7 +237,7 @@ export const Exam = () => {
         <AnsweredList
           handleQuestionOnclick={(number) => {
             setOpenModal(false);
-            setCurrent(number);
+            setCurrentCurrentQuestionIndex(number);
           }}
           totalQuestions={totalQuestion}
           answered={answered}
@@ -277,15 +247,9 @@ export const Exam = () => {
   );
 };
 
-const StyledPaper = styled(Paper)({
-  padding: 30,
-  background: 'rgb(0, 30, 60)',
-  marginLeft: 0,
-  marginRight: 0,
-});
 const Label = styled(FormControlLabel)({
   marginTop: 20,
-  color: selectedColor,
+  color: STYLE.FONT_COLOR_NORMAL,
   whiteSpace: 'pre-line',
   '@media only screen and (max-width: 600px)': {
     marginTop: 10,
@@ -294,28 +258,27 @@ const Label = styled(FormControlLabel)({
 });
 const StyledSwitch = styled(Switch)({
   '& .MuiSwitch-track': {
-    backgroundColor: '#878787',
+    backgroundColor: STYLE.SWITCH_COLOR,
   },
 });
 export const Text = styled(motion.div)({
   textAlign: 'left',
   fontSize: 20,
-  color: selectedColor,
+  color: STYLE.FONT_COLOR_NORMAL,
   whiteSpace: 'pre-line',
 });
 const QuestionText = styled(Text)({
-  fontSize: 18,
+  fontSize: 20,
 });
 const AnswerContainer = styled('div')({
   marginTop: 20,
   paddingBottom: 50,
 });
 export const Heading = styled(Text)({
-  fontWeight: 500,
+  fontWeight: 400,
 });
-const Answer = styled(Text)({
+const AnswerText = styled(Text)({
   cursor: 'default',
-  fontSize: 20,
   marginTop: 10,
   borderRadius: 5,
   '@media only screen and (max-width: 600px)': {

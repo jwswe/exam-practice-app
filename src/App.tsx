@@ -1,8 +1,8 @@
-import { Exam } from './views/exam';
+import { Exam } from './views/Exam';
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
-import { Importer } from './views/importer';
+import { Importer } from './views/QuestionImporter';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
       <main className="main">
         <Routes>
-          <Route path="/exam" element={<Exam />} />
+          <Route path="/" element={<Exam />} />
           <Route path="/import" element={<Importer />} />
         </Routes>
       </main>
