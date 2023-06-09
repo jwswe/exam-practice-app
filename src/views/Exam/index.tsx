@@ -1,17 +1,26 @@
-import { Paper, styled, IconButton, Switch, FormControlLabel, Modal, Select, MenuItem } from '@mui/material';
-import { ChevronLeft, ChevronRight } from '@mui/icons-material';
-import { Container } from '@mui/system';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import {
+  Paper,
+  styled,
+  IconButton,
+  Switch,
+  FormControlLabel,
+  Modal,
+  Select,
+  MenuItem,
+} from "@mui/material";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { Container } from "@mui/system";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
-import { Mode, QuestionPrefix, STYLE } from '../../constant';
-import az900 from '../../data/questions_1.json';
-import az204 from '../../data/questions_2.json';
+import { Mode, QuestionPrefix, STYLE } from "../../constant";
+import az900 from "../../data/questions_1.json";
+import az204 from "../../data/questions_2.json";
 
-import { Answer, Answered, Question } from '../../types/type';
-import { useSearchParams } from 'react-router-dom';
-import AnsweredList from '../AnswerHistory';
-import { styleAnswer } from './utils';
+import { Answered, Question } from "../../types/type";
+import { useSearchParams } from "react-router-dom";
+import AnsweredList from "../AnswerHistory";
+import { styleAnswer } from "./utils";
 
 /**
  * 1 normal
@@ -24,38 +33,48 @@ export const Exam = () => {
   const [certificate, setCertificate] = useState<number>(1);
   const [openModal, setOpenModal] = useState(false);
   const [searchParams] = useSearchParams();
-  const [currentQuestionIndex, setCurrentCurrentQuestionIndex] = useState<number>(Number(searchParams.get('q') || 1) - 1);
+  const [currentQuestionIndex, setCurrentCurrentQuestionIndex] =
+    useState<number>(Number(searchParams.get("q") || 1) - 1);
   const [selected, setSelected] = useState<number>(-1);
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [color, setColor] = useState(STYLE.FONT_COLOR_NORMAL);
   const [done, setDone] = useState(false);
   const [answered, setAnswered] = useState<Answered>({});
   const [mode, setMode] = useState<Mode>(1);
+  const [incorrects, setIncorrects] = useState<Question[]>([]);
 
   const certs = {
+    0: incorrects,
     1: az204,
     2: az900,
   };
 
-  const loadQuestion = (number: number) => (certs[certificate as keyof typeof certs] as Question[])[number];
+  const loadQuestion = (number: number) =>
+    (certs[certificate as keyof typeof certs] as Question[])[number];
   const totalQuestion = certs[certificate as keyof typeof certs].length;
   const currentQuestion = loadQuestion(currentQuestionIndex);
 
   const handleOpen = () => setOpenModal(true);
   const handleClose = () => setOpenModal(false);
+
   const handleRevision = () => {
-    if (mode === Mode.Revision) {
-      setMode(Mode.Normal);
-    } else {
-      const fa = Object.entries(answered).find(([_, v]) => !v.isCorrect);
+    if (mode !== Mode.Revision) {
+      const allIncorrects: Question[] = Object.entries(answered)
+        .filter(([_, val]) => val.isCorrect === false)
+        .map(([key]) => {
+          delete answered[Number(key)]
+          return loadQuestion(Number(key));
+        });
 
-      const firstWrongAnswer = fa ? fa[0] : undefined;
-
-      if (JSON.stringify(answered) === '{}' || !firstWrongAnswer) {
-        console.log('no wrong answer or not answered yet');
+      if (allIncorrects.length === 0) {
         return;
       }
+      setCurrentCurrentQuestionIndex(0);
+      setIncorrects(allIncorrects);
       setMode(Mode.Revision);
+      setCertificate(0);
+    } else {
+      setMode(Mode.Normal);
     }
   };
 
@@ -99,7 +118,9 @@ export const Exam = () => {
                 ...answered,
                 [currentQuestionIndex]: {
                   selectedMultiple: updatedAnswer,
-                  isCorrect: JSON.stringify(correctAnswer) === JSON.stringify(updatedAnswer),
+                  isCorrect:
+                    JSON.stringify(correctAnswer) ===
+                    JSON.stringify(updatedAnswer),
                 },
               });
 
@@ -128,7 +149,7 @@ export const Exam = () => {
         }
         setTimeout(() => changeQuestion(true), 450);
       }
-    }, 50);
+    }, 10);
   };
 
   const AllAnswers: React.FC = () => (
@@ -151,7 +172,11 @@ export const Exam = () => {
           <AnswerText
             key={`answer-${currentAnswerIndex}`}
             style={{ color: fontColor, fontWeight }}
-            onClick={() => (isSelected ? null : handleClickAnswer(currentAnswerIndex, answer.result))}
+            onClick={() =>
+              isSelected
+                ? null
+                : handleClickAnswer(currentAnswerIndex, answer.result)
+            }
           >
             {`${QuestionPrefix[currentAnswerIndex + 1]}. ${answer.text}`}
           </AnswerText>
@@ -169,14 +194,15 @@ export const Exam = () => {
           height: 40,
           marginRight: 15,
           color: STYLE.FONT_COLOR_NORMAL,
-          '& .MuiSvgIcon-root': {
-            color: 'white',
+          "& .MuiSvgIcon-root": {
+            color: "white",
           },
         }}
         value={certificate}
         label="Certificate"
         onChange={(e) => setCertificate(Number(e.target.value))}
       >
+        <MenuItem value={0}>Revision</MenuItem>
         <MenuItem value={1}>AZ204</MenuItem>
         <MenuItem value={2}>AZ900</MenuItem>
       </Select>
@@ -191,9 +217,12 @@ export const Exam = () => {
           <ChevronLeft style={{ width: 50, height: 50 }} />
         </IconButton>
         <Heading>
-          <span style={{ color: STYLE.FONT_CORRECT_COLOR, fontWeight: STYLE.FONT_WEIGHT_BOLD }}>{`${
-            currentQuestionIndex + 1
-          }`}</span>
+          <span
+            style={{
+              color: STYLE.FONT_CORRECT_COLOR,
+              fontWeight: STYLE.FONT_WEIGHT_BOLD,
+            }}
+          >{`${currentQuestionIndex + 1}`}</span>
           {`/${totalQuestion} `}
         </Heading>
         <IconButton
@@ -206,26 +235,47 @@ export const Exam = () => {
           <ChevronRight style={{ width: 50, height: 50 }} />
         </IconButton>
       </TopContainer>
-      <QuestionText key={currentQuestion.question} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <Text
+        key={currentQuestion.question}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <span style={{ color: STYLE.FONT_CORRECT_COLOR }}>
-          ({currentQuestion.isMultiple ? '多' : '單'}选题)
+          ({currentQuestion.isMultiple ? "多" : "單"}选题)&nbsp;
         </span>
         Q{currentQuestionIndex + 1}. {currentQuestion.question}
-      </QuestionText>
+      </Text>
       <AllAnswers />
       <Label
         control={
           <StyledSwitch
             color="primary"
             checked={mode === Mode.Practice}
-            onChange={() => setMode(mode === Mode.Practice ? Mode.Normal : Mode.Practice)}
+            onChange={() =>
+              setMode(mode !== Mode.Practice ? Mode.Practice : Mode.Normal)
+            }
           />
         }
         label="练习"
       />
-      <Label control={<StyledSwitch color="primary" checked={openModal} onChange={handleOpen} />} label="答题历史" />
       <Label
-        control={<StyledSwitch color="primary" checked={mode === Mode.Revision} onChange={handleRevision} />}
+        control={
+          <StyledSwitch
+            color="primary"
+            checked={openModal}
+            onChange={handleOpen}
+          />
+        }
+        label="选题"
+      />
+      <Label
+        control={
+          <StyledSwitch
+            color="primary"
+            checked={mode === Mode.Revision}
+            onChange={handleRevision}
+          />
+        }
         label="错题集"
       />
       <Modal
@@ -250,27 +300,27 @@ export const Exam = () => {
 const Label = styled(FormControlLabel)({
   marginTop: 20,
   color: STYLE.FONT_COLOR_NORMAL,
-  whiteSpace: 'pre-line',
-  '@media only screen and (max-width: 600px)': {
+  whiteSpace: "pre-line",
+  "@media only screen and (max-width: 600px)": {
     marginTop: 10,
     marginBottom: 10,
   },
 });
 const StyledSwitch = styled(Switch)({
-  '& .MuiSwitch-track': {
+  "& .MuiSwitch-track": {
     backgroundColor: STYLE.SWITCH_COLOR,
   },
 });
 export const Text = styled(motion.div)({
-  textAlign: 'left',
+  textAlign: "left",
   fontSize: 20,
   color: STYLE.FONT_COLOR_NORMAL,
-  whiteSpace: 'pre-line',
+  whiteSpace: "pre-line",
+  "@media only screen and (max-width: 600px)": {
+    fontSize: 18,
+  },
 });
-const QuestionText = styled(Text)({
-  fontSize: 20,
-});
-const AnswerContainer = styled('div')({
+const AnswerContainer = styled("div")({
   marginTop: 20,
   paddingBottom: 50,
 });
@@ -278,15 +328,16 @@ export const Heading = styled(Text)({
   fontWeight: 400,
 });
 const AnswerText = styled(Text)({
-  cursor: 'default',
+  cursor: "default",
+  marginLeft: 5,
   marginTop: 10,
   borderRadius: 5,
-  '@media only screen and (max-width: 600px)': {
-    fontSize: 19,
+  "@media only screen and (max-width: 600px)": {
+    fontSize: 17,
   },
 });
-const TopContainer = styled('div')({
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
+const TopContainer = styled("div")({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
 });

@@ -91,7 +91,7 @@ const AnsweredList: React.FC<AnsweredListProps> = ({ totalQuestions, answered, h
 
   return (
     <Box sx={style}>
-      <Heading>答题历史</Heading>
+      <Heading>选题</Heading>
 
       <ListContainer>{AnswerList}</ListContainer>
     </Box>

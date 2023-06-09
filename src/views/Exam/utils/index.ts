@@ -1,5 +1,5 @@
-import { Mode, STYLE } from '../../../constant';
-import { Answer, Answered, Question } from '../../../types/type';
+import { Mode, STYLE } from "../../../constant";
+import { Answer, Answered, Question } from "../../../types/type";
 
 export const styleAnswer = (
   answer: Answer,
@@ -16,10 +16,13 @@ export const styleAnswer = (
   let fontColor = STYLE.FONT_COLOR_NORMAL;
   let fontWeight = STYLE.FONT_WEIGHT_NORMAL;
   let isSelected = false;
-
   if (currentQuestion.isMultiple) {
     if (answered[currentQuestionIndex]) {
-      if (answered[currentQuestionIndex].selectedMultiple?.includes(currentAnswerIndex)) {
+      if (
+        answered[currentQuestionIndex].selectedMultiple?.includes(
+          currentAnswerIndex
+        )
+      ) {
         if (answer.result === false) {
           fontColor = STYLE.FONT_INCORRECT_COLOR;
         } else {
@@ -47,15 +50,19 @@ export const styleAnswer = (
     if (mode === Mode.Practice && answer.result === true) {
       fontColor = STYLE.FONT_CORRECT_COLOR;
       isSelected = true;
-    } else if (answered[currentQuestionIndex]?.selected === currentAnswerIndex) {
-      if (answer.result === true) {
+    } else if (answered[currentQuestionIndex]) {
+      if (answered[currentQuestionIndex]?.selected === currentAnswerIndex) {
+        if (answer.result === true) {
+          fontColor = STYLE.FONT_CORRECT_COLOR;
+        } else {
+          fontColor = STYLE.FONT_INCORRECT_COLOR;
+        }
+      } else if (answer.result === true) {
         fontColor = STYLE.FONT_CORRECT_COLOR;
-      } else {
-        fontColor = STYLE.FONT_INCORRECT_COLOR;
       }
+
       isSelected = true;
     } else if (selected === currentAnswerIndex && done === true) {
-      fontColor = color;
       isSelected = true;
     } else if (selected !== -1 && answer.result === true && done === true) {
       fontColor = STYLE.FONT_CORRECT_COLOR;

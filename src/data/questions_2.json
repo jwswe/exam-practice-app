@@ -359,7 +359,7 @@
     "answers": [
       {
         "text": "az group create\n—name fridge—rg\n—— location fridge—loc",
-        "result": true
+        "result": false
       },
       {
         "text": "New—AzureRmServiceBusNamespace\n—ResourceGroupName fridge—rg\n—NamespaceName fridge—ns\n—Location fridge—loc",
@@ -367,7 +367,7 @@
       },
       {
         "text": "New—AzureRmServiceBusQueue\n—ResourceGroupName fridge—rg\n—NamespaceName fridge—ns\n—Name fridge —q\n—EnablePartitioning $False",
-        "result": false
+        "result": true
       },
       {
         "text": "az servicebus namespace create\n— —resource—group fridge—rg\n—name fridge—rg\n—— location fridge—loc",
@@ -780,7 +780,7 @@
     ]
   },
   {
-    "question": "The file MIME type is supporedby the servics",
+    "question": "The file MIME type is supported by the service.",
     "answers": [
       {
         "text": "Yes",
@@ -793,7 +793,7 @@
     ]
   },
   {
-    "question": "Edge nodes must be purged of all cache assets.",
+    "question": "Edge nodes are not required to be purged.",
     "answers": [
       {
         "text": "Yes",
@@ -897,10 +897,14 @@
     ]
   },
   {
-    "question": "You need to correct the RequestUserApproval Function app error.\nWhat should you do?\nB: Configure the Function app to use an App Service hosting plan. Enable the Always On setting of the hosting plan.",
+    "question": "You need to correct the RequestUserApproval Function app error.\nWhat should you do?",
     "answers": [
       {
         "text": "Update line RA13 to use the asvnc kevword and return an HttpRequest obiect value.",
+        "result": false
+      },
+      {
+        "text": "Configure the Function app to use an App Service hosting plan. Enable the Always On setting of the hosting plan.",
         "result": false
       },
       {
@@ -974,7 +978,7 @@
       },
       {
         "text": "Deploy the website to a virtual machine. Configure a Scale Set to increase the virtual machine instance count when the CPU load is high.",
-        "result": false
+        "result": true
       },
       {
         "text": "Deploy the website to an App Service that uses the Standard service tier.",
@@ -983,7 +987,7 @@
     ]
   },
   {
-    "question": "Configure the App Service plan to automatically scale when the CPU load is high.@\nYou develop an HTTP triggered Azure Function app to process Azure Storage blob data. The app is triggered using an output binding on the blob.\nThe app continues to time out after four minutes. The app must process the blob data.\nYou need to ensure the app does not time out and processes the blob data.\nSolution: Use the Durable Function async pattern to process the blob data.\nDoes the solution meet the goal?",
+    "question": "You develop an HTTP triggered Azure Function app to process Azure Storage blob data. The app is triggered using an output binding on the blob.\nThe app continues to time out after four minutes. The app must process the blob data.\nYou need to ensure the app does not time out and processes the blob data.\nSolution: Use the Durable Function async pattern to process the blob data.\nDoes the solution meet the goal?",
     "answers": [
       {
         "text": "Yes",
@@ -2129,7 +2133,7 @@
     ]
   },
   {
-    "question": "You need to construct the link to the summary report for the email that is sent to users.\nWhat should you do?\nCall GetSharedAccessSignature on the blob and use the resulting link.",
+    "question": "You need to construct the link to the summary report for the email that is sent to users.\nWhat should you do?",
     "answers": [
       {
         "text": "Create a SharedAccessBlobPolicy and add it to the containers SharedAccessPolicies.",
@@ -2144,13 +2148,13 @@
         "result": false
       },
       {
-        "text": "Create a SharedAccessBlobPolicy and set the expiry time to two weeks from today.",
-        "result": false
+        "text": "Create a SharedAccessBlobPolicy and set the expiry time to two weeks from today. Call GetSharedAccessSignature on the container and use the resulting link.",
+        "result": true
       }
     ]
   },
   {
-    "question": "Call GetSharedAccessSignature on the container and use the resulting link.@\nYou need to ensure that the SecurityPin security requirements are met.\nSolution: Enable Always Encrypted for the SecurityPin column using a certificate based on a trusted certificate authority. Update the Getting Started document with instructions to ensure that the certificate is installed on user machines.\nDoes the solution meet the goal?",
+    "question": "You need to ensure that the SecurityPin security requirements are met.\nSolution: Enable Always Encrypted for the SecurityPin column using a certificate based on a trusted certificate authority. Update the Getting Started document with instructions to ensure that the certificate is installed on user machines.\nDoes the solution meet the goal?",
     "answers": [
       {
         "text": "Yes",
@@ -2471,7 +2475,7 @@
       },
       {
         "text": "Implement adaptive sampling using the Application Insights SDK.",
-        "result": false
+        "result": true
       }
     ]
   },
@@ -3233,43 +3237,43 @@
     "totalAnswer": 2
   },
   {
-    "question": "A company is developing a solution that allows smart refrigerators to send temperature information to a central location. You have an existing Service Bus.\nThe solution must receive and store messages until they can be processed. You create an Azure Service Bus instance by providing a name, pricing tier, subscription, resource group, and location.\nYou need to complete the configuration.\nWhich Azure CLI or PowerShell command should you run?\n-ResourceGroupName fridge-rg\n- NamespaceName fridge-ns\n-Location fridge-loc\n-resource-group fridge-rg\n-name fridge-ns\n-location fridge-loc\n-Name fridge-rg\n-Location fridge-loc\n-resource-group fridge-rg\n--namespace-name fridge-ns\n--name fridge-q",
+    "question": "A company is developing a solution that allows smart refrigerators to send temperature information to a central location. You have an existing Service Bus.\nThe solution must receive and store messages until they can be processed. You create an Azure Service Bus instance by providing a name, pricing tier, subscription, resource group, and location.\nYou need to complete the configuration.\nWhich Azure CLI or PowerShell command should you run?",
     "answers": [
       {
-        "text": "New-AzureRmServiceBusNamespace",
+        "text": "New-AzureRmServiceBusNamespace-ResourceGrpupName fridge-rg\n-NamespaceName fridge-ns\n-Location fridge-loc",
         "result": false
       },
       {
-        "text": "az servicebus namespace create",
+        "text": "az servicebus namespace create\n-resource-group fridge-rg\n-name  fridge-ns\n-location fridge-loc",
         "result": false
       },
       {
-        "text": "New-AzureRmResourceGroup",
+        "text": "New-AzureRmResourceGroup\n-Name fridge-rg\n-Location fridge-loc",
         "result": false
       },
       {
-        "text": "az servicebus queue create",
-        "result": false
+        "text": "az servicebus queue create\n--rousrce-group fridge-rg\n--namespace-name fridge-ns\n--name fridge-q",
+        "result": true
       }
     ]
   },
   {
-    "question": "A company is developing a solution that allows smart refrigerators to send temperature information to a central location. You have an existing Service Bus.\nThe solution must receive and store messages until they can be processed. You create an Azure Service Bus instance by providing a name, pricing tier, subscription, resource group, and location.\nYou need to complete the configuration.\nWhich Azure CLI or PowerShell command should you run?\n-resource-group fridge-rg\n-name fridge-ns\n-location fridge-loc\n--resource-group fridge-rg\n-namespace-name fridge-ns\n--name fridge-q\nnamespace authorization-rule ke\n--resource-group fridge-rg\n--fridge-ns fridge-ns\n-name RootManagesharedAccessKey\n--query primaryConnectionstring --output tsv)\n-name fridge-rg\n-location fridge-log",
+    "question": "A company is developing a solution that allows smart refrigerators to send temperature information to a central location. You have an existing Service Bus.\nThe solution must receive and store messages until they can be processed. You create an Azure Service Bus instance by providing a name, pricing tier, subscription, resource group, and location.\nYou need to complete the configuration.\nWhich Azure CLI or PowerShell command should you run?",
     "answers": [
       {
-        "text": "az servicebus namespace create",
+        "text": "az servicebus namespace create\n--resource-group fridge-rg\n--name fridge-ns\n--locationfridge-loc",
         "result": false
       },
       {
-        "text": "az servicebus queue create",
+        "text": "az servicebus queue create\n--resource-group fridge-rg\n--namespace-name fridge-ns\n--namefridge-q",
+        "result": true
+      },
+      {
+        "text": "connectionString-$ (az servicebus\n--resource-group fridge-rg\n--fridge-ns fridge-ns\n--name RootManageSharedAccessKey\n--query primaryConnectionString --output tsv)",
         "result": false
       },
       {
-        "text": "connectionString-$ (az servicebus",
-        "result": false
-      },
-      {
-        "text": "az group create",
+        "text": "az group create\n--name fridge-rg\n--location fridge-log",
         "result": false
       }
     ]
@@ -3453,7 +3457,7 @@
     ]
   },
   {
-    "question": "For an application Nea as developer needs to Create a Dockerfile.\nThe application will be based on ASP Net core. The application has the following requirements:\nEnsure that the application whizlabsApp.dll runs at the startup of the docker container\n- Run a powershell script called whizlabscript.ps1 in the Docker container\nZIF 42\nThe tptApp.dll and the tptsript.ps1 are in the same location as the DockerFile.\nWhich of the following commands wouldNea place in the DockerFile?\n1.) FROM Microsoft/dotnet:2.2-aspnetcore runtime\n2.) EXPOSE tptApp.dll ,tptcsript.ps1\n3.) ENTRYPOINT [\"dotnet\", \"MysingleContainerwebApp.di1\n4.) ENTRYPOINT [\"tptApp.dil\" \u201e\"tptosript.ps]\"]",
+    "question": "For an application Nea as developer needs to Create a Dockerfile.\nThe application will be based on ASP Net core. The application has the following requirements:\nEnsure that the application whizlabsApp.dll runs at the startup of the docker container\n- Run a powershell script called whizlabscript.ps1 in the Docker container\nThe tptApp.dll and the tptsript.ps1 are in the same location as the DockerFile.\nWhich of the following commands wouldNea place in the DockerFile?\n1.) FROM Microsoft/dotnet:2.2-aspnetcore runtime\n2.) EXPOSE tptApp.dll ,tptcsript.ps1\n3.) ENTRYPOINT [\"dotnet\", \"MysingleContainerwebApp.di1\n4.) ENTRYPOINT [\"tptApp.dil\" \u201e\"tptosript.ps]\"]",
     "answers": [
       {
         "text": "Onlv 2 and 3",
@@ -3622,7 +3626,7 @@
     ]
   },
   {
-    "question": "The last message is no longer visible in the queue after the",
+    "question": "The last message is no longer visible in the queue after the code runs.",
     "answers": [
       {
         "text": "Yes",
@@ -3635,7 +3639,7 @@
     ]
   },
   {
-    "question": "code runs.\nThe storage queue remains in the storage account after the code runs.",
+    "question": "The storage queue remains in the storage account after the code runs.",
     "answers": [
       {
         "text": "Yes",
@@ -3700,11 +3704,11 @@
     "answers": [
       {
         "text": "Yes",
-        "result": true
+        "result": false
       },
       {
         "text": "No",
-        "result": false
+        "result": true
       }
     ]
   },
