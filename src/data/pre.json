@@ -1,0 +1,776 @@
+[
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "[ FunctionName ('CheckUserContent' ) ]",
+      {
+        "options": [
+          "[QueueTriggerCuserContent)]",
+          "[BlobTriggerCuserContent/{name})]",
+          "[CosmosDBTrigger(Ucontent)",
+          "Table(userContent, {name})]"
+        ],
+        "correct": 1
+      },
+      {
+        "options": [
+          "[Queue( userContent)]",
+          "[CosmosDB(content, userContent)]",
+          "Table content userContent name",
+          "Blob usercontent name FIleaccess Write"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "question": "You need to implement a solution to resolve the retail store location data issue.\nWhich three Azure Blob features should you enable? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+    "answers": [
+      {
+        "text": "Soft delete",
+        "result": true
+      },
+      {
+        "text": "Change feed",
+        "result": true
+      },
+      {
+        "text": "Snapshots",
+        "result": false
+      },
+      {
+        "text": "Versioning",
+        "result": true
+      },
+      {
+        "text": "Object replication",
+        "result": false
+      },
+      {
+        "text": "Immutability",
+        "result": false
+      }
+    ],
+    "type": 2,
+    "totalAnswer": 3
+  },
+  {
+    "type": 3,
+    "question": "You need to implement the corporate website.\nHow should you configure the solution? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+    "parts": [
+      "Plan",
+      {
+        "options": ["Free", "Standard", "Premium", "Isolated"],
+        "correct": 1
+      },
+      "Service",
+      {
+        "options": [
+          "App Service Web App",
+          "App Service Static Web App",
+          "Azure Function App",
+          "Azure Blob Storage"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "Binding",
+      {
+        "options": ["Blob storage", "Azure Cosmos DB", "Event Grid", "HTTP"],
+        "correct": 3
+      },
+      "Binding Direction",
+      {
+        "options": ["Input", "Output"],
+        "correct": 0
+      },
+      "Trigger",
+      {
+        "options": ["Blob storage", "Azure Cosmos DB", "Event Grid", "HTTP"],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "type": 4,
+    "question": "",
+    "sentences": ["@event[ 'data'", "toString()", "@event[ 'data'"],
+    "options": [
+      "topic",
+      "status",
+      "eventType",
+      "Succeeded",
+      "operationName",
+      "resourceProvider"
+    ],
+    "correctOrder": [1, 3, 4]
+  },
+  {
+    "type": 3,
+    "question": "You need to configure the integration for Azure Service Bus and Azure Event Grid.\nHow should you complete the CLI statement? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+    "parts": [
+      "az",
+      {
+        "options": ["eventgrid", "servicebus"],
+        "correct": 0
+      },
+      {
+        "options": ["event-subscription", "topic", "queue"],
+        "correct": 0
+      },
+      {
+        "options": ["webhook", "eventhub", "servicebusqueue"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "Source",
+      {
+        "options": [
+          "Azure Blob Storage",
+          "Azure Event Grid",
+          "Azure Service Bus",
+          "Azure Event Hub"
+        ],
+        "correct": 0
+      },
+      "Receiver",
+      {
+        "options": [
+          "Azure Event Grid",
+          "Azure Event Hub",
+          "Azure Service Bus",
+          "Azure Blob Storage"
+        ],
+        "correct": 1
+      },
+      "Handler",
+      {
+        "options": [
+          "Azure Function App",
+          "Azure Logic App",
+          "Azure Event Grid",
+          "Azure Blob Storage"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "question": "You need to ensure receipt processing occurs correctly.\nWhat should you do?",
+    "answers": [
+      {
+        "text": "Use blob properties to prevent concurrency problems",
+        "result": false
+      },
+      {
+        "text": "Use blob SnapshotTime to prevent concurrency problems",
+        "result": false
+      },
+      {
+        "text": "Use blob metadata to prevent concurrency problems",
+        "result": false
+      },
+      {
+        "text": "Use blob leases to prevent concurrency problems",
+        "result": true
+      }
+    ],
+    "type": 1
+  },
+  {
+    "type": 4,
+    "question": "",
+    "sentences": ["asd", "asd", "asd", "asd", "asd"],
+    "options": [
+      "Process",
+      "Initialize",
+      "telemetry. Sequence",
+      "ITelemetryProcessor",
+      "ITelemetrylnitializer",
+      "telemetry. Context",
+      "EventGridController.Eventld.Value",
+      "((EventTe1emetry)telemetry).Properties [ ' Eventld ' ]"
+    ],
+    "correctOrder": [4, 1, 5, 7]
+  },
+  {
+    "question": "You need to investigate the http server log output to resolve the issue with the ContentUploadService.\nWhich command should you use first?",
+    "answers": [
+      {
+        "text": "az webapp log",
+        "result": false
+      },
+      {
+        "text": "az ams live-output",
+        "result": false
+      },
+      {
+        "text": "az monitor activity-log",
+        "result": false
+      },
+      {
+        "text": "az container attach",
+        "result": true
+      }
+    ],
+    "type": 1
+  },
+  {
+    "question": "You need to audit the retail store sales transactions.\nWhat are two possible ways to achieve the goal? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+    "answers": [
+      {
+        "text": "Update the retail store location data upload process to include blob index tags. Create an Azure Function to process the blob index tags\nand filter by store location.",
+        "result": false
+      },
+      {
+        "text": "Process the change feed logs of the Azure Blob storage account by using an Azure Function. Specify a time range for the change feed data.",
+        "result": true
+      },
+      {
+        "text": "Enable blob versioning for the storage account. Use an Azure Function to process a list of the blob versions per day.",
+        "result": false
+      },
+      {
+        "text": "Process an Azure Storage blob inventory report by using an Azure Function. Create rule filters on the blob inventory report.",
+        "result": false
+      },
+      {
+        "text": "Subscribe to blob storage events by using an Azure Function and Azure Event Grid. Filter the events by store locatio",
+        "result": true
+      }
+    ],
+    "type": 2,
+    "totalAnswer": 2
+  },
+  {
+    "question": "You need to reduce read latency for the retail store solution.\nWhat are two possible ways to achieve the goal? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+    "answers": [
+      {
+        "text": "Create a new composite index for the store location data queries in Azure Cosmos DB. Modify the queries to support parameterized SQL\nand update the Azure Function app to call the new queries.",
+        "result": true
+      },
+      {
+        "text": "Provision an Azure Cosmos DB dedicated gateway. Update the Azure Function app connection string to use the new dedicated gateway\nendpoint.",
+        "result": false
+      },
+      {
+        "text": "Configure Azure Cosmos DB consistency to session consistency. Cache session tokens in a new Azure Redis cache instance after every\nwrite. Update reads to use the session token stored in Azure Redis.",
+        "result": true
+      },
+      {
+        "text": "Provision an Azure Cosmos DB dedicated gateway. Update blob storage to use the new dedicated gateway endpoint.",
+        "result": false
+      },
+      {
+        "text": "Configure Azure Cosmos DB consistency to strong consistency. Increase the RUs for the container supporting store location data.",
+        "result": false
+      }
+    ],
+    "type": 2,
+    "totalAnswer": 2
+  },
+  {
+    "question": "\nYou need to ensure the security policies are met.\nWhat code do you add at line CS07 of ConfigureSSE.ps1?",
+    "answers": [
+      {
+        "text": "PermissionsToKeys create, encrypt, decrypt",
+        "result": false
+      },
+      {
+        "text": "PermissionsToCertificates create, encrypt, decrypt",
+        "result": true
+      },
+      {
+        "text": "PermissionsToCertificates wrapkey, unwrapkey, get",
+        "result": false
+      },
+      {
+        "text": "PermissionsToKeys wrapkey, unwrapkey, get",
+        "result": false
+      }
+    ],
+    "type": 1
+  },
+  {
+    "type": 3,
+    "parts": [
+      "var resolver = new KeyVaultKeyResolver(_keyVaultCIient);\nvar keyBundle = await _keyVaultClient.GetKeyAsync(",
+      {
+        "options": [
+          "var key = keyBundle.Key;",
+          "var key = keyBundle.KeyIdentifier.identifier;",
+          "var key = await resoler.ResolveKeyAsync('encrypt', null)",
+          "var key = await resoler.ResolveKeyAsync(keyBundle.KeyIdentifier.identifier, CancellationToken.None)"
+        ],
+        "correct": 3
+      },
+
+      "\n",
+      {
+        "options": [
+          "var x = keyBundle.Managed;",
+          "var x = AuthenticationScheme.SharedKey;",
+          "var x = new BlobEncryptionPolicy(key, resolver);",
+          "var x = new DeleteRetenttonPoIlcy {Enabled = key,Kid null};"
+        ],
+        "correct": 2
+      },
+      "\n",
+      {
+        "options": [
+          "cloudBlobCIient.AuthenucaUonScheme = x;",
+          "cloudBIobClient.DefautRequestOptions.RequireEncryption = x;",
+          "cloudBIobClient.DefautRequestOptions.EhZrypttonPolicy = x;",
+          "cloudBlobClient.SetServiceProperües(new ServiceProperties(deleRetentationPolicy:x)"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "Tier",
+      {
+        "options": ["Basic", "Standard", "Premium"],
+        "correct": 2
+      },
+      "RBAC role",
+      {
+        "options": [
+          "Owner",
+          "Contributor",
+          "Azure Service Bus Data Owner",
+          "Azure Service Bus Data Receiver"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "authentication level",
+      {
+        "options": ["anonymous", "function", "admin"],
+        "correct": 1
+      },
+      "managed identity",
+      {
+        "options": ["system-assigned", "user-assigned"],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "parts": [
+      "Policy",
+      {
+        "options": [
+          "Check HTTP header",
+          "Restrict caller IPs",
+          "Limit call rate by key",
+          "Validate JWT"
+        ],
+        "correct": 3
+      },
+      "Policy section",
+      {
+        "options": ["Inbound", "Outbound"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "parts": [
+      "Authorization level",
+      {
+        "options": ["Function", "Anonymous", "Admin"],
+        "correct": 0
+      },
+      "User claims",
+      {
+        "options": [
+          "JSON Web Token (JWT)",
+          "Shared Access Signature (SAS) toke",
+          "API Key"
+        ],
+        "correct": 0
+      },
+      "Trigger type",
+      {
+        "options": ["blob", "HTTP", "queue", "timer"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": 4,
+    "question": "",
+    "options": [
+      "secret",
+      "envVar",
+      "secretValues",
+      "volumes",
+      "volumeMounts",
+      "environmentVariabies"
+    ],
+    "correctOrder": [4, 3, 0]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "SSL certificate",
+      {
+        "options": ["Valid root certificate", "Self-signed certificate"],
+        "correct": 0
+      },
+      "Proxy type",
+      {
+        "options": ["nginx", "Azure Application Gateway"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      {
+        "options": [
+          "allowPublicClient:true",
+          "oauth2Permissionsn: [login]",
+          "oauth2AllowUrlPathMatching:true",
+          "oauth2AlIowldTokenlmplicltFlown:true"
+        ],
+        "correct": 1
+      },
+      {
+        "options": [
+          "oauth2AllowlmplicitFlow: true",
+          "oauth2RequiredPostResponsen:true",
+          "preAuthorizedApplications: SPA",
+          "knownCientApplications ContentAnalysisService"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "type": 4,
+    "question": "appRoles",
+
+    "options": [
+      "User",
+      "value",
+      "role",
+      "Application",
+      "allowedMemberTypes",
+      "allowedAccountTypes"
+    ],
+    "correctOrder": [3, 0, 1]
+  },
+  {
+    "question": "You need to secure the Azure Functions to meet the security requirements.\nWhich two actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+    "answers": [
+      {
+        "text": "Store the RSA-HSM key in Azure Key Vault with soft-delete and purge-protection features enabled.",
+        "result": true
+      },
+      {
+        "text": "Store the RSA-HSM key in Azure Blob storage with an immutability policy applied to the container.",
+        "result": false
+      },
+      {
+        "text": "Create a free tier Azure App Configuration instance with a new Azure AD service principal.",
+        "result": false
+      },
+      {
+        "text": "Create a standard tier Azure App Configuration instance with an assigned Azure AD managed identity.",
+        "result": true
+      },
+      {
+        "text": "Store the RSA-HSM key in Azure Cosmos DB. Apply the built-in policies for customer-managed keys and allowed locations.",
+        "result": false
+      }
+    ],
+    "type": 2,
+    "totalAnswer": 2
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "JSON web token (JWT) type",
+      {
+        "options": ["ID", "Refresh", "Access"],
+        "correct": 0
+      },
+      "Payload claim value",
+      {
+        "options": ["oid", "aud", "idp"],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "question": "You need to grant access to the retail store location data for the inventory service development effort.\nWhat should you use?",
+    "answers": [
+      {
+        "text": "Azure AD access token",
+        "result": false
+      },
+      {
+        "text": "Azure RBAC role",
+        "result": false
+      },
+      {
+        "text": "Shared access signature (SAS) token",
+        "result": true
+      },
+      {
+        "text": "Azure AD ID token",
+        "result": false
+      },
+      {
+        "text": "Azure AD refresh token",
+        "result": false
+      }
+    ],
+    "type": 1
+  },
+  {
+    "type": 4,
+    "question": "",
+    "options": [
+      "true",
+      "SingleTransferContext",
+      "ShouldTransferCallbackAsync",
+      "false",
+      "DirectoryTransferContext",
+      "ShouldOverwriteCa11backAsync"
+    ],
+    "sentences": ["var context = new", "context.", "isServiceCopy:"],
+    "correctOrder": [4, 2, 3]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "Backup and Restore",
+      {
+        "options": [
+          "Azure Site Recovery",
+          "Azure Backup",
+          "Azure Data Box",
+          "Aure Migrate"
+        ],
+        "correct": 1
+      },
+      "Performance",
+      {
+        "options": [
+          "Azure Network Watcher",
+          "Azure Trafic Manager",
+          "ExpressRoute",
+          "Accelerated Netwo Ing"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "Tier",
+      {
+        "options": ["Basic", "Standard", "Premium"],
+        "correct": 2
+      },
+      "Access control (IAM) level",
+      {
+        "options": [
+          "Contributor",
+          "Data Receiver",
+          "Data Sender",
+          "Data Owner"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "type": 4,
+    "question": "<policies>",
+    "options": [
+      "name",
+      "inbound",
+      "outbound",
+      "set-variable",
+      "fragment-id",
+      "include-fragment"
+    ],
+    "correctOrder": [1, 5, 4, 1]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      "Third-party system endpoint to send events",
+      {
+        "options": [
+          "system topic",
+          "custom topic",
+          "event domain",
+          "event subscription"
+        ],
+        "correct": 0
+      },
+      "Azure Functions app endpoint to handle\nfiltered events",
+      {
+        "options": [
+          "system topic",
+          "custom topic",
+          "event domain",
+          "event subscription"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "question": "",
+    "parts": [
+      {
+        "options": ["skip", "append", "delete", "override"],
+        "correct": 2
+      },
+      "\n",
+      {
+        "options": [
+          "set-body",
+          "forward-request",
+          "set-backend-service",
+          "set-query-parameter"
+        ],
+        "correct": 2
+      },
+      {
+        "options": [
+          "base-uri",
+          "dimension",
+          "vary-by-header",
+          "publish-to-dapr"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "question": "You are building a B2B web application that uses Azure B2B collaboration for authentication. Paying customers authenticate to Azure B2B using federation.\nThe application allows users to sign up for trial accounts using any email address.\nWhen a user converts to a paying customer, the data associated with the trial should be kept, but the user must authenticate using\nfederation.\nYou need to update the user in Azure Active Directory (Azure AD) when they convert to a paying customer.\nWhich Graph API parameter is used to change authentication from one-time passcodes to federation?",
+    "answers": [
+      {
+        "text": "resetRedemption",
+        "result": true
+      },
+      {
+        "text": "Status",
+        "result": false
+      },
+      {
+        "text": "userFlowType",
+        "result": false
+      },
+      {
+        "text": "invitedUser",
+        "result": false
+      }
+    ],
+    "type": 1
+  },
+  {
+    "question": "\nYou are developing a road tollway tracking application that sends tracking events by using Azure Event Hubs using premium tier.\nEach road must have a throttling policy uniquely assigned.\nYou need to configure the event hub to allow for per-road throttling.\nWhat should you do?",
+    "answers": [
+      {
+        "text": "Use a unique consumer group for each road.",
+        "result": false
+      },
+      {
+        "text": "Ensure each road stores events in a different partition.",
+        "result": false
+      },
+      {
+        "text": "Ensure each road has a unique connection string.",
+        "result": false
+      },
+      {
+        "text": "Use a unique application group for each road.",
+        "result": true
+      }
+    ],
+    "type": 1
+  },
+  {
+    "question": "You develop a solution that uses Azure Virtual Machines (VMs).\nThe VMs contain code that must access resources in an Azure resource group. You grant the VM access to the resource group in Resource\nManager.\nYou need to obtain an access token that uses the VM's system-assigned managed identity.\nWhich two actions should you perform? Each correct answer presents part of the solution.",
+    "answers": [
+      {
+        "text": "From the code on the VM, call Azure Resource Manager using an access token.",
+        "result": true
+      },
+      {
+        "text": "Use PowerShell on a remote machine to make a request to the local managed identity for Azure resources endpoint.",
+        "result": false
+      },
+      {
+        "text": "Use PowerShell on the VM to make a request to the local managed identity for Azure resources endpoint.",
+        "result": true
+      },
+      {
+        "text": "From the code on the VM, call Azure Resource Manager using a SAS token.",
+        "result": false
+      },
+      {
+        "text": "From the code on the VM, generate a user delegation SAS token.",
+        "result": false
+      }
+    ],
+    "type": 2,
+    "totalAnswer": 2
+  },
+  {
+    "question": "\nYou are building a loyalty program for a major snack producer. When customers buy a snack at any of 100 participating retailers the\nevent is\nrecorded in Azure\nEvent Hub. Each retailer is given a unique identifier that is used as the primary identifier for the loyalty program.\nRetailers must be able to be added or removed at any time. Retailers must only be able to record sales for themselves.\nYou need to ensure that retailers can record sales.\nWhat should you do?",
+    "answers": [
+      {
+        "text": "Use publisher policies for retailers.",
+        "result": true
+      },
+      {
+        "text": "Create a partition for each retailer.",
+        "result": false
+      },
+      {
+        "text": "Define a namespace for each retailer.",
+        "result": false
+      }
+    ],
+    "type": 1
+  }
+]

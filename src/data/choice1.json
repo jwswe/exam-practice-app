@@ -1,0 +1,22 @@
+{
+  "question": "dsa",
+  "answers": [
+    {
+      "text": "asd",
+      "result": true
+    },
+    {
+      "text": "asd",
+      "result": false
+    },
+    {
+      "text": "asd",
+      "result": true
+    },
+    {
+      "text": "asd",
+      "result": false
+    }
+  ],
+  "type": 1,
+},

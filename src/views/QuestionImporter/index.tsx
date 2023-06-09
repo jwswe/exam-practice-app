@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Answer, Question } from '../../types/type';
+import { Answer, Question, QuestionType } from '../../types/type';
 
 export const Importer = () => {
   const [lines, setLines] = useState<number>(0);
@@ -52,7 +52,6 @@ export const Importer = () => {
                 if (i === 0) {
                   return <div>　</div>;
                 } else {
-                  let check = false;
                   return (
                     <Form.Check
                       style={{ flex: 4, marginLeft: 10 }}
@@ -93,7 +92,7 @@ export const Importer = () => {
             const res: Question = {
               question,
               answers: resAnswers,
-              isMultiple: correctAnswers > 1 ? true : undefined,
+              type: correctAnswers > 1 ? QuestionType.Multiple : QuestionType.Single,
               totalAnswer: correctAnswers > 1 ? correctAnswers : undefined,
             };
 
